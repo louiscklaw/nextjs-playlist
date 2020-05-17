@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[7],{IggU:function(n,t,e){(window.__NEXT_P=window.__NEXT_P||[]).push(["/post/[pid]",function(){return e("QPV7")}])},QPV7:function(n,t,e){"use strict";e.r(t);var u=e("q1tI"),o=e.n(u),i=e("nOHt"),r=o.a.createElement;t.default=function(){var n=Object(i.useRouter)().query.pid;return r("p",null,"Post: ",n)}}},[["IggU",0,1,2]]]);
