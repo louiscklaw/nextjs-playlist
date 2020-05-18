@@ -2,14 +2,18 @@
 
 set -ex
 
-rm -rf *
+rm -rf */
+ls -A1 | xargs rm -rf
 
-npm init -y
+read -p 'clean directory done. press any key...'
+
+# npm init -y
 
 cp /home/logic/_workspace/nextjs-playlist/template/package.json .
 
-
-yarn add next react react-dom
+yarn install &
 
 mkdir pages
 cp /home/logic/_workspace/nextjs-playlist/template/pages/index.js ./pages/index.js
+
+wait
