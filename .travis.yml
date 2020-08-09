@@ -18,4 +18,4 @@ import:
   - credentials.yml
   - .travis-merger.yml
   - .travis-stages.yml
-  - nextjs-tryout/.travis.yml
+  # - nextjs-tryout/.travis.yml
