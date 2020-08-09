@@ -238,7 +238,7 @@ def categorize_branch(branch_to_test):
     return CONST_BRANCH_UNKNOWN
 
 def merge_to_feature_branch(test_branch_name, feature_branch_name, cwd):
-  create_branch_if_not_exist_remote(feature_branch_name, cwd)
+  create_branch_if_not_exist(feature_branch_name, cwd)
 
   # TODO:
   # checkout_branch(feature_branch_name, cwd)
@@ -412,8 +412,8 @@ def process_dependabot_PR(PUSH_URI, pr_branch, cwd, no_push_uri = False):
 
   # push_commit(PUSH_URI, test_pr_branch, cwd, False)
 
-  create_branch_if_not_exist_remote(test_pr_branch,cwd)
-  checkout_branch(test_pr_branch, cwd)
+  # create_branch_if_not_exist_remote(test_pr_branch,cwd)
+  checkout_branch('develop', cwd)
   run_command('git merge {}'.format(pr_branch))
   push_commit(PUSH_URI, test_pr_branch, cwd, False)
 
