@@ -69,7 +69,7 @@ def print_error(error_text):
 
 
 def print_message(msg_text):
-  print(chalk.red(error_text))
+  print(chalk.red(msg_text))
 
 def create_temp_dir():
   TEMP_DIR = local('mktemp -d', capture=True)
