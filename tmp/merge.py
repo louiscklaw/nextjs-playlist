@@ -168,7 +168,7 @@ def create_branch_if_not_exist(branch_name, cwd):
 
 def create_branch_if_not_exist_remote(branch_name, cwd):
   'checkout branch if exist, create and checkout if not exist'
-  if check_branch_exist(branch_name, cwd) and check_remote_branch_exist(branch_name, cwd):
+  if check_branch_exist(branch_name, cwd) or check_remote_branch_exist(branch_name, cwd):
     checkout_branch(branch_name, cwd)
   else:
     create_new_branch(branch_name, cwd)
