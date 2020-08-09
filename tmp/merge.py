@@ -186,6 +186,7 @@ def check_branch_exist(branch_name, cwd):
       return True
     except Exception as e:
       print('branch not found')
+      print_message(result)
       return False
       pass
 
@@ -202,6 +203,7 @@ def check_remote_branch_exist(branch_name, cwd):
       return True
     except Exception as e:
       print('branch not found')
+      print_message(result)
       return False
       pass
 
