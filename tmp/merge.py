@@ -287,7 +287,7 @@ def process_test_branch(PUSH_URI, test_branch_name, cwd, no_push_uri = False):
 
   # CAUTION: using cwd inside run_command
 
-  # with settings(warn_only=True):
+  with settings(warn_only=True):
     run_result = run_command('git clone  -b {} {} .'.format(test_branch_name, PUSH_URI), cwd)
 
 
