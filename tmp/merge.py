@@ -415,7 +415,7 @@ def process_dependabot_PR(PUSH_URI, pr_branch, cwd, no_push_uri = False):
   # create_branch_if_not_exist_remote(test_pr_branch,cwd)
   checkout_branch('develop', cwd)
   run_command('git merge {}'.format(pr_branch))
-  push_commit(PUSH_URI, test_pr_branch, cwd, False)
+  push_commit(PUSH_URI, 'develop', cwd, False)
 
   # print('Step 2: Merge the changes and update on GitHub.')
   # run_command('git checkout -b "test/dependabot/npm_and_yarn/bulma-toast-tryout/lodash-4.17.19"', cwd)
