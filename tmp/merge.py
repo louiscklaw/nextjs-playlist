@@ -66,10 +66,8 @@ def print_error(error_text):
   print('')
   print(chalk.red('^'* 80 + " error dump " + '^'*48))
 
-
-
 def print_message(msg_text):
-  print(chalk.red(msg_text))
+  print(chalk.blue(msg_text))
 
 def create_temp_dir():
   TEMP_DIR = local('mktemp -d', capture=True)
