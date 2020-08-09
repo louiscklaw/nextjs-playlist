@@ -299,7 +299,7 @@ def process_test_branch(PUSH_URI, test_branch_name, cwd, no_push_uri = False):
   #     raise GIT_ERR_128_EXPLAIN
   #   else:
   #     pass
-  create_branch_if_not_exist_remote(test_branch_name,cwd)
+  create_branch_if_not_exist_remote(feature_branch_name,cwd)
 
 
   merge_to_feature_branch(test_branch_name, feature_branch_name, cwd)
