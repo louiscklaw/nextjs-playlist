@@ -240,8 +240,11 @@ def categorize_branch(branch_to_test):
 def merge_to_feature_branch(test_branch_name, feature_branch_name, cwd):
   create_branch_if_not_exist_remote(feature_branch_name, cwd)
 
+  # TODO:
+  # checkout_branch(feature_branch_name, cwd)
+
   # currently in feature branch
-  run_command('git merge --ff-only "{}"'.format(test_branch_name), cwd)
+  run_command('git merge --ff-only "{}"'.format(test_branch_name), cwd, ignore_error=False)
 
 def merge_to_pre_merge_branch(fix_branch_name, pre_merge_branch_name, cwd):
   create_branch_if_not_exist(pre_merge_branch_name, cwd)
