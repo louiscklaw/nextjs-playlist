@@ -198,7 +198,7 @@ def check_remote_branch_exist(branch_name, cwd):
     try:
       from pprint import pprint
       pprint(result)
-      result.index('remote/'+branch_name)
+      result.index('remotes/origin/'+branch_name)
       print('branch found')
       return True
     except Exception as e:
