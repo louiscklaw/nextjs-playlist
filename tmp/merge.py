@@ -287,18 +287,20 @@ def process_test_branch(PUSH_URI, test_branch_name, cwd, no_push_uri = False):
 
   # CAUTION: using cwd inside run_command
 
-  with settings(warn_only=True):
-    run_result = run_command('git clone  -b {} {} .'.format(test_branch_name, PUSH_URI), cwd)
+  # with settings(warn_only=True):
+  #   run_result = run_command('git clone  -b {} {} .'.format(test_branch_name, PUSH_URI), cwd)
 
 
-    if (run_result.failed == ERR_DRY_RUN_EXPLAIN):
-      print(chalk.yellow(ERR_DRY_RUN_EXPLAIN))
+  #   if (run_result.failed == ERR_DRY_RUN_EXPLAIN):
+  #     print(chalk.yellow(ERR_DRY_RUN_EXPLAIN))
 
-    elif run_result.failed:
-      print(chalk.red(GIT_ERR_128_EXPLAIN))
-      raise GIT_ERR_128_EXPLAIN
-    else:
-      pass
+  #   elif run_result.failed:
+  #     print(chalk.red(GIT_ERR_128_EXPLAIN))
+  #     raise GIT_ERR_128_EXPLAIN
+  #   else:
+  #     pass
+  create_branch_if_not_exist_remote(test_branch_name,cwd)
+
 
   merge_to_feature_branch(test_branch_name, feature_branch_name, cwd)
 
