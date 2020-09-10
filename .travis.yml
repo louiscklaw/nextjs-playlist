@@ -9,22 +9,13 @@ language: node_js
 
 node_js:
   - 12
+
 cache:
   - npm
   - pip
 
-script:
-  - hostname
-
-stages:
-  - Unit_test
-  - Test
-  - Build
-  - Deploy
-  - Integration_to_other_repo
-  - Publish_dashboard
-  - Merge
-
 import:
   - credentials.yml
-  - .travis-merge.yml
+  - .travis-merger.yml
+  - .travis-stages.yml
+  # - nextjs-tryout/.travis.yml

@@ -1,0 +1,10 @@
+
+jobs:
+  include:
+    - stage: Unit_test
+      name: test (nextjs-tryout)
+      script:
+        - cd nextjs-tryout
+        -   yarn
+        -   yarn build
+        - cd -
