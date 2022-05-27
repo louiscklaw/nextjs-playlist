@@ -1,0 +1,21 @@
+{
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "prettier_file": "prettier --write \"./pages/**/*.{js,jsx}\"",
+    "gitUpdate": "yarn prettier_file && git add . && git commit -m\"update nextjs12-helloworld, \"",
+    "init_dev": "yarn --dev && yarn dev"
+  },
+  "dependencies": {
+    "axios": "^0.26.1",
+    "next": "latest",
+    "react": "17.0.2",
+    "react-dom": "17.0.2",
+    "react-query": "^3.34.19"
+  },
+  "devDependencies": {
+    "prettier": "^2.6.2",
+    "puppeteer": "^11.0.0"
+  }
+}
