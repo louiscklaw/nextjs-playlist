@@ -4,16 +4,17 @@
     "build": "next build",
     "start": "next start",
     "prettier_file": "prettier --write \"./pages/**/*.{js,jsx}\"",
+    "post-update": "echo \"codesandbox preview only, need an update\" && yarn upgrade --latest",
     "gitUpdate": "yarn prettier_file && git add . && git commit -m\"update nextjs12-helloworld, \"",
     "init_dev": "yarn --dev && yarn dev"
   },
   "dependencies": {
     "next": "latest",
-    "react": "17.0.2",
-    "react-dom": "17.0.2"
+    "react": "latest",
+    "react-dom": "latest"
   },
   "devDependencies": {
-    "prettier": "^2.6.2",
-    "puppeteer": "^11.0.0"
+    "prettier": "latest",
+    "puppeteer": "latest"
   }
 }
