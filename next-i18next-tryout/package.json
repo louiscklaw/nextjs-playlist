@@ -1,5 +1,5 @@
 {
-  "name": "next-link-tryout",
+  "name": "next-i18next-tryout",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -7,7 +7,11 @@
     "build": "next build",
     "start": "next start",
     "export": "next export -o static_build",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prettier_file": "prettier --write \"./pages/**/*.{js,jsx}\"",
+    "post-update": "echo \"codesandbox preview only, need an update\" && yarn upgrade --latest",
+    "gitUpdate": "yarn prettier_file && git add . && git commit -m\"update next-i18next-tryout, \"",
+    "init_dev": "yarn --dev && yarn dev"
   },
   "dependencies": {
     "i18next": "^19.4.4",
@@ -15,5 +19,9 @@
     "next-i18next": "^4.4.2",
     "react": "16.13.1",
     "react-dom": "16.13.1"
+  },
+  "devDependencies": {
+    "prettier": "latest",
+    "puppeteer": "latest"
   }
 }

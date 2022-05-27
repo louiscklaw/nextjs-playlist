@@ -1,13 +1,11 @@
-import React from 'react';
+import React from 'react'
 import PropTypes from 'prop-types'
 
 import { i18n, Link, withTranslation } from '../i18n'
 // import { i18n, Link, withTranslation } from '../i18n'
 
-
-
-function page1 ({ t }) {
-  return(
+function page1({ t }) {
+  return (
     <div>
       page1 helloworld
       {t('h1')}
