@@ -7,11 +7,18 @@
     "build": "next build",
     "start": "next start",
     "export": "next export -o static_build",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "prettier_file": "prettier --write \"./pages/**/*.{js,jsx}\"",
+    "post-update": "echo \"codesandbox preview only, need an update\" && yarn upgrade --latest",
+    "gitUpdate": "yarn prettier_file && git add . && git commit -m\"update nextjs12-helloworld, \"",
+    "init_dev": "yarn --dev && yarn dev"
   },
   "dependencies": {
-    "next": "9.4.0",
-    "react": "16.13.1",
-    "react-dom": "16.13.1"
+    "next": "latest",
+    "react": "latest",
+    "react-dom": "latest"
+  },
+  "devDependencies": {
+    "prettier": "latest",
+    "puppeteer": "latest"
   }
 }
