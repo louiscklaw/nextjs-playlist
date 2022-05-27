@@ -1,0 +1,32 @@
+{
+  "name": "nextjs-mui-helloworld",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "post-update": "echo \"codesandbox preview only, need an update\" && yarn upgrade --latest",
+    "prettier_file": "prettier --write \"./pages/**/*.{js,jsx}\"",
+    "gitUpdate": "yarn prettier_file && git add . && git commit -m\"update nextjs-mui-helloworld, \"",
+    "init_dev": "yarn --dev && yarn dev"
+  },
+  "dependencies": {
+    "@emotion/cache": "latest",
+    "@emotion/react": "latest",
+    "@emotion/server": "latest",
+    "@emotion/styled": "latest",
+    "@mui/icons-material": "latest",
+    "@mui/material": "latest",
+    "next": "latest",
+    "prop-types": "latest",
+    "react": "latest",
+    "react-dom": "latest"
+  },
+  "devDependencies": {
+    "eslint": "latest",
+    "eslint-config-next": "latest",
+    "prettier": "^2.6.2",
+    "puppeteer": "^11.0.0"
+  }
+}
