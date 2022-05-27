@@ -1,5 +1,5 @@
 {
-  "name": "next-link-tryout",
+  "name": "nextjs-sentry-tryout",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -9,7 +9,7 @@
     "export": "next export -o static_build",
     "prettier_file": "prettier --write \"./pages/**/*.{js,jsx}\"",
     "post-update": "echo \"codesandbox preview only, need an update\" && yarn upgrade --latest",
-    "gitUpdate": "yarn prettier_file && git add . && git commit -m\"update nextjs12-helloworld, \"",
+    "gitUpdate": "yarn prettier_file && git add . && git commit -m\"update nextjs-sentry-tryout, \"",
     "init_dev": "yarn --dev && yarn dev"
   },
   "dependencies": {
