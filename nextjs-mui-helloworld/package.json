@@ -6,9 +6,10 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
+    "clear": "rm -rf node_modules && rm -rf .next",
     "post-update": "echo \"codesandbox preview only, need an update\" && yarn upgrade --latest",
     "prettier_file": "prettier --write \"./pages/**/*.{js,jsx}\"",
-    "gitUpdate": "yarn prettier_file && git add . && git commit -m\"update nextjs-mui-helloworld, \"",
+    "gitUpdate": "git add . && git commit -m\"update nextjs-mui-helloworld, \"",
     "init_dev": "yarn --dev && yarn dev"
   },
   "dependencies": {
