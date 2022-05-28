@@ -5,7 +5,12 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "clear": "rm -rf node_modules && rm -rf .next",
+    "post-update": "echo \"codesandbox preview only, need an update\" && yarn upgrade --latest",
+    "prettier_file": "prettier --write \"./pages/**/*.{js,jsx}\"",
+    "gitUpdate": "git add . && git commit -m\"update next-mdx, \"",
+    "init_dev": "yarn --dev && yarn dev"
   },
   "dependencies": {
     "@mdx-js/loader": "^1.6.1",
