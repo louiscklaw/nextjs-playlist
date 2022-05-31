@@ -11,10 +11,7 @@
   },
   "functions": {
     "source": ".",
-    "predeploy": [
-      "npm --prefix \"$PROJECT_DIR\" install",
-      "npm --prefix \"$PROJECT_DIR\" run build"
-    ],
+    "predeploy": ["yarn", "yarn build"],
     "runtime": "nodejs14"
   }
 }
