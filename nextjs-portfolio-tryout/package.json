@@ -11,6 +11,13 @@
     "docker_rebuild": "docker-compose down && docker-compose ps && docker-compose up --build --force-recreate -d && docker-compose logs -f "
   },
   "dependencies": {
+    "@emotion/cache": "latest",
+    "@emotion/react": "latest",
+    "@emotion/server": "latest",
+    "@emotion/styled": "latest",
+    "@mui/icons-material": "latest",
+    "@mui/lab": "^5.0.0-alpha.83",
+    "@mui/material": "latest",
     "next": "latest",
     "react": "latest",
     "react-dom": "latest"
