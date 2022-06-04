@@ -11,7 +11,7 @@
     "prettier_file": "prettier --write \"./{src, pages, components}/**/*.{js,jsx}\"",
     "gitUpdate": "git add . && git commit -m\"update nextjs-portfolio-tryout, \"",
     "init_dev": "yarn --dev && yarn dev",
-    "docker_rebuild": "docker-compose build --force-rm --parallel --compress && docker-compose down && docker-compose up -d && docker-compose logs -f "
+    "docker_rebuild": "docker-compose down && docker-compose up --build --force-recreate -d && docker-compose logs -f "
   },
   "dependencies": {
     "@emotion/cache": "latest",
