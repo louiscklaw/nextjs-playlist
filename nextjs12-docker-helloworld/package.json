@@ -1,0 +1,22 @@
+{
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "prettier_file": "prettier --write \"./pages/**/*.{js,jsx}\"",
+    "post-update": "echo \"codesandbox preview only, need an update\" && yarn upgrade --latest",
+    "gitUpdate": "git add . && git commit -m\"update nextjs12-docker-helloworld, \"",
+    "init_dev": "yarn --dev && yarn dev",
+    "clear": "rm -rf node_modules && rm -rf .next",
+    "docker_rebuild": "docker-compose down && docker-compose up --build --force-recreate -d && docker-compose logs -f "
+  },
+  "dependencies": {
+    "next": "latest",
+    "react": "latest",
+    "react-dom": "latest"
+  },
+  "devDependencies": {
+    "prettier": "latest",
+    "puppeteer": "latest"
+  }
+}
