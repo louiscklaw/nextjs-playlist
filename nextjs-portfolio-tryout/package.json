@@ -8,7 +8,7 @@
     "gitUpdate": "git add . && git commit -m\"update nextjs-portfolio-tryout, \"",
     "init_dev": "yarn --dev && yarn dev",
     "clear": "rm -rf node_modules && rm -rf .next",
-    "docker_rebuild": "docker-compose down && docker-compose up --build --force-recreate -d && docker-compose logs -f "
+    "docker_rebuild": "docker-compose down && docker-compose ps && docker-compose up --build --force-recreate -d && docker-compose logs -f "
   },
   "dependencies": {
     "next": "latest",
