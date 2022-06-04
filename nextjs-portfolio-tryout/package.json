@@ -1,42 +1,21 @@
 {
-  "name": "nextjs-portfolio-tryout",
-  "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint",
-    "clear": "rm -rf .next",
+    "prettier_file": "prettier --write \"./pages/**/*.{js,jsx}\"",
     "post-update": "echo \"codesandbox preview only, need an update\" && yarn upgrade --latest",
-    "prettier_file": "prettier --write \"./{src, pages, components}/**/*.{js,jsx}\"",
     "gitUpdate": "git add . && git commit -m\"update nextjs-portfolio-tryout, \"",
     "init_dev": "yarn --dev && yarn dev",
+    "clear": "rm -rf node_modules && rm -rf .next",
     "docker_rebuild": "docker-compose down && docker-compose up --build --force-recreate -d && docker-compose logs -f "
   },
   "dependencies": {
-    "@emotion/cache": "latest",
-    "@emotion/react": "latest",
-    "@emotion/server": "latest",
-    "@emotion/styled": "latest",
-    "@mui/icons-material": "latest",
-    "@mui/lab": "^5.0.0-alpha.83",
-    "@mui/material": "latest",
     "next": "latest",
-    "prop-types": "latest",
     "react": "latest",
-    "react-div-100vh": "^0.7.0",
-    "react-dom": "latest",
-    "react-icons": "^4.3.1",
-    "react-markdown": "^8.0.3",
-    "react-perfect-scrollbar": "^1.5.8",
-    "react-sticky-box": "^1.0.2",
-    "rehype-raw": "^6.1.1",
-    "remark-frontmatter": "^4.0.1",
-    "remark-gfm": "^3.0.1"
+    "react-dom": "latest"
   },
   "devDependencies": {
-    "eslint": "8.16.0",
-    "eslint-config-next": "12.1.6",
     "prettier": "latest",
     "puppeteer": "latest"
   }
