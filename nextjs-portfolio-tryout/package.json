@@ -11,25 +11,9 @@
     "docker_rebuild": "docker-compose down && docker-compose up --build --force-recreate -d && docker-compose logs -f "
   },
   "dependencies": {
-    "@emotion/cache": "latest",
-    "@emotion/react": "latest",
-    "@emotion/server": "latest",
-    "@emotion/styled": "latest",
-    "@mui/icons-material": "latest",
-    "@mui/lab": "^5.0.0-alpha.83",
-    "@mui/material": "latest",
     "next": "latest",
     "react": "latest",
-    "react-dom": "latest",
-    "prop-types": "latest",
-    "react-icons": "^4.3.1",
-    "react-markdown": "^8.0.3",
-    "react-perfect-scrollbar": "^1.5.8",
-    "react-sticky-box": "^1.0.2",
-    "rehype-raw": "^6.1.1",
-    "remark-frontmatter": "^4.0.1",
-    "remark-gfm": "^3.0.1",
-    "react-div-100vh": "^0.7.0"
+    "react-dom": "latest"
   },
   "devDependencies": {
     "prettier": "latest",
