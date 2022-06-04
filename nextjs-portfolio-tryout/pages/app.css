@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,400;0,700;1,200;1,400&display=swap');
+
+@import url('https://cdn.jsdelivr.net/npm/chiron-hei-hk-webfont@2.5.2/css/vf.min.css');
+
+* {
+  /* transition: 0.33s; */
+  /* transition-timing-function: ease-in; */
+}
+
+body {
+  /* 黑體的字體家族名稱是 "Chiron Hei HK WS" */
+  font-family: 'Chiron Sung HK WS';
+
+  /* 指定字重。由於是 VF 字型，字重值可在 250 至 900 間任意調整 */
+  font-weight: 310;
+
+  /* 如有載入斜體 CSS 檔就可以通過 “font-style: italic” 宣吿在中英混排時使用真正的斜體英數字 */
+  font-style: normal;
+
+  /* 指定「字面調整軸」變化，有效值為 0 至 10 之間，Text 分支字面率等同本軸的 “6” */
+  font-variation-settings: 'PADG' 4; /* 意即將字面縮小 2% */
+
+  /* letter-spacing: 0.3rem; */
+  /* word-spacing: 10px; */
+}
