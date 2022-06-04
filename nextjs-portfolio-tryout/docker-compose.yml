@@ -5,7 +5,7 @@ services:
   next:
     build: .
     ports:
-      - '8081:3000'
+      - '8082:3000'
     restart: always
     labels:
       - 'traefik.enable=true'
