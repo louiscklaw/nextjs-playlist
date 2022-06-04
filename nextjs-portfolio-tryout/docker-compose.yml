@@ -12,7 +12,7 @@ services:
       - 'traefik.http.routers.portfolio.rule=Host(`portfolio.iamon99.com`)'
       - 'traefik.http.routers.portfolio.entrypoints=websecure'
       - 'traefik.http.routers.portfolio.tls.certresolver=myresolver'
-      - 'traefik.http.services.portfolio.loadbalancer.server.port=8082'
+      - 'traefik.http.services.portfolio.loadbalancer.server.port=3000'
 
 networks:
   default:
