@@ -6,7 +6,10 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "prettier_file": "prettier --write \"./pages/**/*.{js,jsx}\"",
+    "gitUpdate": "git add . && git commit -m\"update next-helloworld-tryout,\"",
+    "init_dev": "yarn --dev && yarn dev"
   },
   "dependencies": {
     "next": "11.1.2",
@@ -15,6 +18,8 @@
   },
   "devDependencies": {
     "eslint": "8.0.1",
-    "eslint-config-next": "11.1.2"
+    "eslint-config-next": "11.1.2",
+    "prettier": "^2.6.2",
+    "puppeteer": "^11.0.0"
   }
 }
