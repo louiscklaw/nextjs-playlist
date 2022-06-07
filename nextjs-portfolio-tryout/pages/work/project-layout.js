@@ -1,4 +1,6 @@
 import React from 'react'
+import { MDXProvider } from '@mdx-js/react'
+import Image from 'next/image'
 import { Container, Box, Grid, Paper, Stack, Typography } from '@mui/material'
 import { useRef, useState, useEffect } from 'react'
 import { use100vh } from 'react-div-100vh'
@@ -13,16 +15,23 @@ import PostDate from '../../components/PostDate'
 import TestTableOfContent from '../../components/TestTableOfContent'
 import BlogH3 from '../../components/BlogH3'
 import BlogBody from '../../components/BlogBody'
-import ReactMarkdown from 'react-markdown'
-import remarkGfm from 'remark-gfm'
-import remarkFrontMatter from 'remark-frontmatter'
-import rehypeRaw from 'rehype-raw'
+
+const ResponsiveImage = props => <Image alt={props.alt} layout="responsive" {...props} />
+
+const components = {
+  img: ThemeImg,
+  h1: ThemeH1,
+  h2: ThemeH2,
+  h3: ThemeH3,
+  p: ThemeP,
+  em: ThemeDebug,
+}
 
 export function MyComponent() {
   return <>MyComponent helloworld</>
 }
 
-export function ProjectLayout({ meta, children }) {
+export function MyLayoutComponent(props) {
   let height_100vh = use100vh()
   let [mobile_menu_open, setMobileMenuOpen] = useState(false)
   const sectionRefs = [useRef(null), useRef(null), useRef(null)]
@@ -80,15 +89,24 @@ export function ProjectLayout({ meta, children }) {
             mobile_menu_open={mobile_menu_open}
             setMobileMenuOpen={setMobileMenuOpen}
           />
-          <Stack spacing={18} justifyContent="center" alignItems={'center'}>
+          <Stack spacing={{ xs: 10, md: 18 }} justifyContent="center" alignItems={'center'}>
             <NavMenu setMobileMenuOpen={setMobileMenuOpen} />
-
-            {/* content */}
             <Container maxWidth="xl">
-              {children}
-              <pre>{JSON.stringify(meta)}</pre>
+              <Grid container spacing={5}>
+                <Grid item xs={12} md={8}>
+                  <Stack spacing={2}>
+                    <MDXProvider components={components}>
+                      <main {...props} />
+                    </MDXProvider>
+                  </Stack>
+                </Grid>
+                <Grid item xs={0} md={4} sx={{ display: { xs: 'none', md: 'block' } }}>
+                  <StickyBox>
+                    <TestTableOfContent toc_active={toc_active} toc_list={h1_array} />
+                  </StickyBox>
+                </Grid>
+              </Grid>
             </Container>
-            {/* content */}
 
             <ContactsPart />
             <BottomList />
@@ -97,4 +115,58 @@ export function ProjectLayout({ meta, children }) {
       </Container>
     </>
   )
+}
+
+export function ThemeH1({ children }) {
+  return (
+    <>
+      <PageTitle className="markdown-title">{children}</PageTitle>
+    </>
+  )
+}
+
+export function ThemeH2({ children }) {
+  return (
+    <>
+      <PageSubtitle className="markdown-subtitle">{children}</PageSubtitle>
+    </>
+  )
+}
+
+export function ThemeH3({ children }) {
+  return (
+    <>
+      <BlogH3 className="markdown-subtitle" pt="1rem" pb="1rem">
+        {children}
+      </BlogH3>
+    </>
+  )
+}
+
+export function ThemeP({ children }) {
+  return (
+    <>
+      <BlogBody className="markdown-body">{children}</BlogBody>
+    </>
+  )
+}
+
+export function ThemeImg({ src }) {
+  return (
+    <>
+      <img
+        src={src}
+        style={{
+          maxWidth: 'auto',
+          maxHeight: 'auto',
+          width: '100%',
+          borderRadius: '0.5rem',
+        }}
+      />
+    </>
+  )
+}
+
+export function ThemeDebug({ children }) {
+  return <>{children}</>
 }

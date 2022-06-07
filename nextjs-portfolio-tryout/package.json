@@ -9,7 +9,9 @@
     "init_dev": "yarn --dev && yarn dev",
     "clear": "rm -rf node_modules && rm -rf .next",
     "cypress": "cypress open",
-    "docker_rebuild": "docker-compose build && docker-compose rm -s -v -f && docker-compose up -d && docker-compose logs -f "
+    "docker_rebuild": "docker-compose build && docker-compose rm -s -v -f && docker-compose up -d && docker-compose logs -f ",
+    "gitSync": "git fetch --all && git pull",
+    "sync_rebuild": "yarn gitSync && yarn docker_rebuild"
   },
   "dependencies": {
     "@emotion/cache": "latest",

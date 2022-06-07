@@ -32,40 +32,39 @@ export default function BottomList() {
             <DesktopLink link_text="Changelog" link_href="/changelog" />
           </Stack>
         ) : (
-          <Grid container spacing={3}>
-            <Grid item xs={6} md={2}>
+          <Grid container rowGap={2}>
+            <Grid item xs={6} container justifyContent="center">
               <Link href="/about" underline="hover">
                 About
               </Link>
             </Grid>
-            <Grid item xs={6} md={2}>
+            <Grid item xs={6} container justifyContent="center">
               <Link href="/work" underline="hover">
                 Work
               </Link>
             </Grid>
-            <Grid item xs={6} md={2}>
+            <Grid item xs={6} container justifyContent="center">
               <Link href="/blog" underline="hover">
                 Blog
               </Link>
             </Grid>
-            <Grid item xs={6} md={2}>
+            <Grid item xs={6} container justifyContent="center">
               <Link href="/photo" underline="hover">
                 Photo
               </Link>
             </Grid>
-            <Grid item xs={6} md={2}>
+            <Grid item xs={6} container justifyContent="center">
               <Link href="/resources" underline="hover">
                 Resources
               </Link>
             </Grid>
-            <Grid item xs={6} md={2}>
+            <Grid item xs={6} container justifyContent="center">
               <Link href="/changelog" underline="hover">
                 Changelog
               </Link>
             </Grid>
           </Grid>
         )}
-
         <Stack p={1} sx={{ width: '100%' }}>
           <Typography
             variant="caption"
