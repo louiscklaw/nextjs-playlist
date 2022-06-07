@@ -1,0 +1,100 @@
+import React from 'react'
+import { Container, Box, Grid, Paper, Stack, Typography } from '@mui/material'
+import { useRef, useState, useEffect } from 'react'
+import { use100vh } from 'react-div-100vh'
+import StickyBox from 'react-sticky-box'
+import BottomList from '../../components/BottomList'
+import ContactsPart from '../../components/ContactsPart'
+import FullPageMobileMenu from '../../components/FullPageMobileMenu'
+import NavMenu from '../../components/NavMenu'
+import PageSubtitle from '../../components/PageSubtitle'
+import PageTitle from '../../components/PageTitle'
+import PostDate from '../../components/PostDate'
+import TestTableOfContent from '../../components/TestTableOfContent'
+import BlogH3 from '../../components/BlogH3'
+import BlogBody from '../../components/BlogBody'
+import ReactMarkdown from 'react-markdown'
+import remarkGfm from 'remark-gfm'
+import remarkFrontMatter from 'remark-frontmatter'
+import rehypeRaw from 'rehype-raw'
+
+export function MyComponent() {
+  return <>MyComponent helloworld</>
+}
+
+export function ProjectLayout({ meta, children }) {
+  let height_100vh = use100vh()
+  let [mobile_menu_open, setMobileMenuOpen] = useState(false)
+  const sectionRefs = [useRef(null), useRef(null), useRef(null)]
+
+  let [h1_array, setH1Array] = useState([])
+  let [h1_element, setH1Element] = useState([])
+
+  // const toc_active = useScrollSpy({
+  //   sectionElementRefs: h1_element,
+  //   offsetTop: 20,
+  //   offsetBottom: 20,
+  // })
+
+  let [toc_active, setTocActive] = useState(0)
+
+  useEffect(() => {
+    let temp = []
+    let temp_els = []
+    document.querySelectorAll('.markdown-subtitle').forEach(el => temp.push(el.textContent))
+    setH1Array(temp)
+  }, [])
+
+  useEffect(() => {
+    let h1_array_offset_top = []
+
+    document
+      .querySelectorAll('.markdown-subtitle')
+      .forEach(el => h1_array_offset_top.push(el.offsetTop))
+
+    const scrollHandler = () => {
+      const scrollPosition =
+        (document.documentElement && document.documentElement.scrollTop) ||
+        (document.body && document.body.scrollTop)
+
+      console.log({ scrolling: true, scrollPosition, h1_array_offset_top })
+
+      for (let i = h1_array_offset_top.length; i > -1; i--) {
+        if (scrollPosition > h1_array_offset_top[i]) {
+          setTocActive(i)
+          break
+        }
+      }
+    }
+
+    scrollHandler()
+    window.addEventListener('scroll', scrollHandler)
+    return () => window.removeEventListener('scroll', scrollHandler)
+  }, [])
+
+  return (
+    <>
+      <Container maxWidth="xl">
+        <Paper elevation={0}>
+          <FullPageMobileMenu
+            mobile_menu_open={mobile_menu_open}
+            setMobileMenuOpen={setMobileMenuOpen}
+          />
+          <Stack spacing={18} justifyContent="center" alignItems={'center'}>
+            <NavMenu setMobileMenuOpen={setMobileMenuOpen} />
+
+            {/* content */}
+            <Container maxWidth="xl">
+              {children}
+              <pre>{JSON.stringify(meta)}</pre>
+            </Container>
+            {/* content */}
+
+            <ContactsPart />
+            <BottomList />
+          </Stack>
+        </Paper>
+      </Container>
+    </>
+  )
+}

@@ -1,0 +1,19 @@
+import { MyComponent, MyLayoutComponent } from './my-components'
+
+export const meta = {
+  author: 'Rich Haines',
+}
+
+# My MDX Page with a Layout
+
+This is a list in markdown:
+
+- One
+- Two
+- Three
+
+Checkout my React component:
+
+<MyComponent />
+
+export default ({ children }) => <MyLayoutComponent meta={meta}>{children}</MyLayoutComponent>
