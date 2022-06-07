@@ -1,8 +1,21 @@
+import { MyComponent, MyLayoutComponent } from "./my-components";
+
 export const meta = {
-  title: "Markdown/MDX with Next.js",
-  author: "Lee Robinson",
+  author: "Rich Haines",
 };
 
-I **love** using [Next.js](https://nextjs.org/)
+# My MDX Page with a Layout
 
-123321
+This is a list in markdown:
+
+- One
+- Two
+- Three
+
+Checkout my React component:
+
+<MyComponent />
+
+export default ({ children }) => (
+  <MyLayoutComponent meta={meta}>{children}</MyLayoutComponent>
+);

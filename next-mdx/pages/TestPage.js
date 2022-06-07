@@ -5,10 +5,10 @@ import Content, { meta } from "./Content.mdx";
 
 import matter from "gray-matter";
 
-export default function Home(props) {
+export default function TestPage(props) {
   return (
     <>
-      {JSON.stringify({ props, meta }, null, 2)}
+      Test page{JSON.stringify({ props, meta }, null, 2)}
       <Content />
     </>
   );
