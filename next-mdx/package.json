@@ -13,13 +13,13 @@
     "init_dev": "yarn --dev && yarn dev"
   },
   "dependencies": {
-    "@mdx-js/loader": "^1.6.1",
-    "@next/mdx": "^9.4.0",
-    "gray-matter": "^4.0.3",
-    "mdx.macro": "^0.2.9",
-    "next": "9.4.0",
-    "react": "16.13.1",
-    "react-dom": "16.13.1"
+    "@mdx-js/loader": "latest",
+    "@mdx-js/react": "latest",
+    "@next/mdx": "latest",
+    "mdx.macro": "latest",
+    "next": "latest",
+    "react": "latest",
+    "react-dom": "latest"
   },
   "devDependencies": {
     "prettier": "latest",
