@@ -1,0 +1,98 @@
+import { MyComponent, NewWindowLink, MyLayoutComponent, GithubLink } from './project-layout'
+
+export const meta = {
+  author: 'Rich Haines',
+  date: 'MAR 09, 2021',
+}
+
+# appium behave notes
+
+![](/assets/appiumbehavenotes_thumbnail.png)
+
+### PURPOSE:
+
+To test mobile apps of hk observatory environment:
+
+- linux
+- appium
+- python 3.6.1, behave, python-appium-client
+
+### TO SETUP:
+
+`$ pip install -r requirements.txt`
+
+### TO EXECUTE:
+
+```
+$ virtualenv venv
+$ source venv/bin/activate
+```
+
+### INSTALL PYTHON LIBRARIES:
+
+`$ pip install -r requirements.txt`
+
+```
+start appium -> connect to android / genymotion appium:
+
+$ python behave
+$ behave ./features/HKOApp_9DayForecast.feature
+```
+
+### STACK ON MAC MACHINE:
+
+```
+brew cask install visual-studio-code
+brew install zsh-history-substring-search
+brew install zsh
+brew install zsh-lovers
+brew install zsh-autosuggestions
+brew install zsh-navigation-tools
+brew install zsh-completions
+brew install zsh-syntax-highlighting
+brew install zsh-git-prompt
+brew install zshdb
+brew install git-flow
+```
+
+### DEMO:
+
+passing example
+
+<iframe
+  width="560"
+  height="315"
+  src="https://www.youtube.com/embed/Ce-v1zTHhwU"
+  title="YouTube video player"
+  frameborder="0"
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+  allowfullscreen
+></iframe>
+
+failing example
+
+<iframe
+  width="560"
+  height="315"
+  src="https://www.youtube.com/embed/uR8VLSwvf9Q"
+  title="YouTube video player"
+  frameborder="0"
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+  allowfullscreen
+></iframe>
+
+### SYSTEM STRUCTURE:
+
+system structure:
+system structure ?
+
+Behave grammer:
+behave grammer ?
+
+### REFERENCES / REPOSITORIES:
+
+<GithubLink repo={'louiscklaw/tradingview-tile-tryout'}>
+  louiscklaw/tradingview-tile-tryout
+</GithubLink>
+
+export default ({ children }) => <MyLayoutComponent meta={meta}>{children}</MyLayoutComponent>
