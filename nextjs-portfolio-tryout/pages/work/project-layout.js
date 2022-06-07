@@ -15,6 +15,7 @@ import PostDate from '../../components/PostDate'
 import TestTableOfContent from '../../components/TestTableOfContent'
 import BlogH3 from '../../components/BlogH3'
 import BlogBody from '../../components/BlogBody'
+import Link from '../../src/Link'
 
 const ResponsiveImage = props => <Image alt={props.alt} layout="responsive" {...props} />
 
@@ -164,6 +165,22 @@ export function ThemeImg({ src }) {
         }}
       />
     </>
+  )
+}
+
+export function NewWindowLink({ children, link }) {
+  return (
+    <Link href={link} underline="hover">
+      {children}
+    </Link>
+  )
+}
+
+export function GithubLink({ children, repo }) {
+  return (
+    <Link href={`https://www.github.com/${repo}`} underline="hover">
+      {children}
+    </Link>
   )
 }
 

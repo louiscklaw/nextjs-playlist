@@ -1,4 +1,4 @@
-import { MyComponent, MyLayoutComponent } from './project-layout'
+import { MyComponent, NewWindowLink, MyLayoutComponent, GithubLink } from './project-layout'
 
 export const meta = {
   author: 'Rich Haines',
@@ -15,10 +15,14 @@ A simple page to monitor stock, while data provided by trading view
 
 ### DEMO:
 
-https://louiscklaw.github.io/tradingview-tile-tryout
+<NewWindowLink link={'https://louiscklaw.github.io/tradingview-tile-tryout'}>
+  https://louiscklaw.github.io/tradingview-tile-tryout
+</NewWindowLink>
 
 ### REFERENCES / REPOSITORIES:
 
-louiscklaw/tradingview-tile-tryout
+<GithubLink repo={'louiscklaw/tradingview-tile-tryout'}>
+  louiscklaw/tradingview-tile-tryout
+</GithubLink>
 
 export default ({ children }) => <MyLayoutComponent meta={meta}>{children}</MyLayoutComponent>
