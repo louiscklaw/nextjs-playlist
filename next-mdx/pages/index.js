@@ -1,15 +1,24 @@
-import Head from "next/head";
+// https://nextjs.org/docs/advanced-features/using-mdx
 
-import * as Post from "./Content.mdx";
-import Content, { meta } from "./Content.mdx";
+import { MDXProvider } from "@mdx-js/react";
+import Image from "next/image";
+import { Heading_H1 } from "./my-components";
 
-import matter from "gray-matter";
+const ResponsiveImage = (props) => (
+  <Image alt={props.alt} layout="responsive" {...props} />
+);
 
-export default function Home(props) {
+const components = {
+  img: ResponsiveImage,
+  h1: Heading_H1,
+};
+
+export default function Post(props) {
   return (
     <>
-      {JSON.stringify({ props, meta }, null, 2)}
-      <Content />
+      <MDXProvider components={components}>
+        <main {...props} />
+      </MDXProvider>
     </>
   );
 }
