@@ -8,7 +8,7 @@
     "gitUpdate": "git add . && git commit -m\"update nextjs-portfolio-tryout, \"",
     "init_dev": "yarn --dev && yarn dev",
     "clear": "rm -rf node_modules && rm -rf .next",
-    "cypress": "cypress",
+    "cypress": "cypress open",
     "docker_rebuild": "docker-compose build && docker-compose rm -s -v -f && docker-compose up -d && docker-compose logs -f "
   },
   "dependencies": {
@@ -19,11 +19,11 @@
     "@mui/icons-material": "latest",
     "@mui/lab": "^5.0.0-alpha.83",
     "@mui/material": "latest",
-    "prop-types": "latest",
     "next": "latest",
+    "prop-types": "latest",
     "react": "latest",
-    "react-dom": "latest",
     "react-div-100vh": "^0.7.0",
+    "react-dom": "latest",
     "react-icons": "^4.3.1",
     "react-markdown": "^8.0.3",
     "react-perfect-scrollbar": "^1.5.8",
@@ -33,8 +33,9 @@
     "remark-gfm": "^3.0.1"
   },
   "devDependencies": {
+    "cypress": "latest",
+    "cypress-visual-regression": "^1.7.0",
     "prettier": "latest",
-    "puppeteer": "latest",
-    "cypress": "latest"
+    "puppeteer": "latest"
   }
 }
