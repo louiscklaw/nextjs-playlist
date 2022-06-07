@@ -170,3 +170,7 @@ export function ThemeImg({ src }) {
 export function ThemeDebug({ children }) {
   return <>{children}</>
 }
+
+export default function Dummy() {
+  return <></>
+}

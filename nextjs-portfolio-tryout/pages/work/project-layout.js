@@ -187,3 +187,7 @@ export function GithubLink({ children, repo }) {
 export function ThemeDebug({ children }) {
   return <>{children}</>
 }
+
+export default function Dummy() {
+  return <></>
+}
