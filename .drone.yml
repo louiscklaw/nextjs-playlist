@@ -19,7 +19,7 @@ steps:
       - git merge --ff-only develop
       - git push
     when:
-      status: [success, failure]
+      status: [success]
 
 ---
 kind: pipeline
