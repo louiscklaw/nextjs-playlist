@@ -1,0 +1,10 @@
+kind: pipeline
+name: hello-alpine
+type: docker
+
+steps:
+  - name: helloworld
+    image: alpine
+    commands:
+      - echo hello
+      - echo world
