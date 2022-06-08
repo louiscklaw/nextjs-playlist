@@ -9,7 +9,6 @@ steps:
       - cd nextjs-portfolio-tryout
       - yarn
       - yarn build
-      - yarn docker_rebuild
 
 ---
 kind: pipeline
@@ -17,10 +16,17 @@ type: exec
 name: default
 
 platform:
-  os: linux
   arch: amd64
+  os: linux
+
+trigger:
+  branch:
+    - preview
+  event:
+    include:
+      - pull_request
 
 steps:
-  - name: greeting
+  - name: up
     commands:
       - echo hello world
