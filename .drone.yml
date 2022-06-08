@@ -10,7 +10,7 @@ steps:
       - yarn
       - yarn build
 
-  - name: build_and_deploy
+  - name: merge_and_push
     image: node:18
     commands:
       - cd nextjs-portfolio-tryout
