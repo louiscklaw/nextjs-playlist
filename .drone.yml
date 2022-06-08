@@ -3,7 +3,7 @@ name: deploy_portfolio
 type: docker
 
 steps:
-  - name: build_and_deploy
+  - name: build
     image: node:18
     commands:
       - cd nextjs-portfolio-tryout
