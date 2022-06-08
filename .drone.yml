@@ -43,4 +43,6 @@ trigger:
 steps:
   - name: up
     commands:
-      - echo hello world
+      - cd nextjs-portfolio-tryout
+      - yarn
+      - yarn docker_rebuild
