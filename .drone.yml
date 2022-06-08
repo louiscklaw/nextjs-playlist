@@ -17,7 +17,7 @@ steps:
       - git config --global user.email "drone_ci@iamon99.com"
       - git config --global user.name "drone_ci"
       - git checkout master
-      - git merge --no-ff develop
+      - git merge --ff-only develop
       - git push
     when:
       status: [success, failure]
