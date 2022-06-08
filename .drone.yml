@@ -21,7 +21,8 @@ steps:
       - git config --global user.email "drone_ci@iamon99.com"
       - git config --global user.name "drone_ci"
       - git merge --ff-only develop
-      - git push
+      - git push --set-upstream origin master
+
     when:
       status: [success]
 
