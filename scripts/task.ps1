@@ -1,0 +1,1 @@
+npx create-next-app nextjs12-helloworld --use-yarn --example "https://github.com/vercel/next-learn/tree/master/basics/learn-starter"

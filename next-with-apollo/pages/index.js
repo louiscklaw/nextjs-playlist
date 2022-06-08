@@ -8,11 +8,14 @@ import client from "../apollo-client";
 export async function getStaticProps() {
   const { data } = await client.query({
     query: gql`
-      query Countries {
-        countries {
-          code
-          name
-          emoji
+      query Restaurants {
+        restaurants {
+          data {
+            id
+            attributes {
+              name
+            }
+          }
         }
       }
     `,
@@ -20,11 +23,11 @@ export async function getStaticProps() {
 
   return {
     props: {
-      countries: data.countries.slice(0, 40),
+      countries: data,
     },
   };
 }
 
 export default function Home({ countries }) {
-  return <div className={styles.grid}>{JSON.stringify(countries)}</div>;
+  return <pre>{JSON.stringify(countries, null, 2)}</pre>;
 }
