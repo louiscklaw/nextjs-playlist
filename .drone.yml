@@ -45,4 +45,4 @@ steps:
     commands:
       - cd nextjs-portfolio-tryout
       - yarn
-      - yarn docker_rebuild
+      - yarn docker_ci_rebuild
