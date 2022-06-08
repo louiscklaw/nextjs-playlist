@@ -1,10 +1,12 @@
 kind: pipeline
-name: hello-alpine
+name: deploy_portfolio
 type: docker
 
 steps:
-  - name: helloworld
-    image: alpine
+  - name: build_and_deploy
+    image: node:18
     commands:
-      - echo hello
-      - echo world
+      - cd nextjs-portfolio-tryout
+      - yarn
+      - yarn build
+      - yarn docker_rebuild
