@@ -10,6 +10,18 @@ steps:
       - yarn
       - yarn build
 
+  - name: build_and_deploy
+    image: node:18
+    commands:
+      - cd nextjs-portfolio-tryout
+      - git config --global user.email "drone_ci@iamon99.com"
+      - git config --global user.name "drone_ci"
+      - git checkout master
+      - git merge --no-ff develop
+      - git push
+    when:
+      status: [success, failure]
+
 ---
 kind: pipeline
 type: exec
@@ -21,10 +33,7 @@ platform:
 
 trigger:
   branch:
-    - preview
-  event:
-    include:
-      - pull_request
+    - master
 
 steps:
   - name: up
