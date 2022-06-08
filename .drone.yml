@@ -1,6 +1,6 @@
 kind: pipeline
-name: deploy_portfolio
 type: docker
+name: build_test_merge
 
 trigger:
   branch:
@@ -28,7 +28,7 @@ steps:
 ---
 kind: pipeline
 type: exec
-name: default
+name: deploy_portfolio
 
 platform:
   arch: amd64
