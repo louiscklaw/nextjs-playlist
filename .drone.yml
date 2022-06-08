@@ -2,6 +2,10 @@ kind: pipeline
 name: deploy_portfolio
 type: docker
 
+trigger:
+  branch:
+    - develop
+
 steps:
   - name: build
     image: node:18
