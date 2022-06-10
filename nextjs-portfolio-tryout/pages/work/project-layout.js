@@ -181,9 +181,11 @@ export function NewWindowLink({ children, link }) {
 
 export function GithubLink({ children, repo }) {
   return (
-    <Link href={`https://www.github.com/${repo}`} underline="hover">
-      {children}
-    </Link>
+    <Box>
+      <Link href={`https://www.github.com/${repo}`} underline="hover">
+        {children}
+      </Link>
+    </Box>
   )
 }
 
