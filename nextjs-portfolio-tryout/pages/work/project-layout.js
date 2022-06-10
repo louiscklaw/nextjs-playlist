@@ -16,6 +16,7 @@ import TestTableOfContent from '../../components/TestTableOfContent'
 import BlogH3 from '../../components/BlogH3'
 import BlogBody from '../../components/BlogBody'
 import Link from '../../src/Link'
+import CodeBlock from '../../components/CodeBlock'
 
 const ResponsiveImage = props => <Image alt={props.alt} layout="responsive" {...props} />
 
@@ -26,6 +27,8 @@ const components = {
   h3: ThemeH3,
   p: ThemeP,
   em: ThemeDebug,
+  pre: ThemePre,
+  code: ThemeCode,
 }
 
 export function MyComponent() {
@@ -184,8 +187,25 @@ export function GithubLink({ children, repo }) {
   )
 }
 
-export function ThemeDebug({ children }) {
+export function ThemePre({ children }) {
+  return (
+    <>
+      <CodeBlock>{children}</CodeBlock>
+    </>
+  )
+}
+
+export function ThemeCode({ children }) {
   return <>{children}</>
+}
+
+export function ThemeDebug({ children }) {
+  return (
+    <>
+      <div>ThemeDebug</div>
+      {children}
+    </>
+  )
 }
 
 export default function Dummy() {
