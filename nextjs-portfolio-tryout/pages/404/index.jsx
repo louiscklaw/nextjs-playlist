@@ -22,7 +22,8 @@ export default function NotFound() {
             <img src={NotFoundSvg.src} style={{ width: '100%', maxWidth: 'auto' }} />
           </Box>
           <Box>
-            <Typography variant="h5">Sorry but the page not found</Typography>
+            <Typography variant="h5">Sorry but the page not found...</Typography>
+            <Typography variant="h5">唔好意思，想要果頁搵唔到...</Typography>
           </Box>
           <Box>
             <Link href="/">

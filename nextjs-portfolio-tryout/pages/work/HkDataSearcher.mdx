@@ -1,0 +1,27 @@
+import { MyComponent, NewWindowLink, MyLayoutComponent, GithubLink } from './project-layout'
+
+export const meta = {
+  author: 'Rich Haines',
+  date: 'MAR 09, 2021',
+  tags: ['gatsbyjs', 'json'],
+}
+
+# hk data search board
+
+![](/assets/hk-data-search.png)
+
+### PURPOSE:
+
+A personal page to help search APIs provided by hk government. Also trying using gatsby.
+
+### DEMO:
+
+https://hk-data-search-8703a.web.app
+
+### REFERENCES / REPOSITORIES:
+
+<GithubLink repo={'louiscklaw/allwinner-v3s-tryout'}>louiscklaw/hk-data-search</GithubLink>
+
+[https://travis-ci.com/github/louiscklaw/hk-data-search/](https://travis-ci.com/github/louiscklaw/hk-data-search/)
+
+export default ({ children }) => <MyLayoutComponent meta={meta}>{children}</MyLayoutComponent>
