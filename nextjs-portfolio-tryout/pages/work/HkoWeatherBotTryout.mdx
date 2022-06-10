@@ -1,0 +1,22 @@
+import { MyComponent, NewWindowLink, MyLayoutComponent, GithubLink } from './project-layout'
+
+export const meta = {
+  author: 'Rich Haines',
+  date: 'MAR 09, 2021',
+  tags: ['gatsbyjs', 'json'],
+}
+
+# hko weather bot tryout
+
+![](/assets/hk-data-search.png)
+
+### PURPOSE:
+
+This is a simple chatbot that help ask weather of hong kong. screenshot still preparing.
+
+### REFERENCES / REPOSITORIES:
+
+<GithubLink repo={'louiscklaw/hko-weather-slackbot'}>louiscklaw/hko-weather-slackbot</GithubLink>
+<GithubLink repo={'slackapi/python-slackclient'}>slackapi/python-slackclient</GithubLink>
+
+export default ({ children }) => <MyLayoutComponent meta={meta}>{children}</MyLayoutComponent>
