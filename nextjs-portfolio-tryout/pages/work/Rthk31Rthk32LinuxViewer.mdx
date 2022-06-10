@@ -1,0 +1,83 @@
+import { MyComponent, NewWindowLink, MyLayoutComponent, GithubLink } from './project-layout'
+
+export const meta = {
+  author: 'Rich Haines',
+  date: 'MAR 09, 2021',
+  tags: ['gatsbyjs', 'json'],
+}
+
+# printer board tryout
+
+![](/assets/rthk31rthk32linuxviewer_thumbnail.png)
+
+### PURPOSE:
+
+To connect to the world while you’re working in linux environment at home…… inspired by [https://blog.wtako.net/view/23](https://blog.wtako.net/view/23)
+
+### REQUIREMENTS:
+
+- linux, gnome
+- python3, curl, gnome-mpv
+
+### HOW TO INSTALL:
+
+open ~/.bashrc or ~/.zshrc and paste the following source into itlogout linux -> logindone
+
+### SOURCE:
+
+```bash
+# RTHK31
+rthk31 () {
+        link=$(curl -s -L https://www.rthk.hk/feeds/dtt/rthktv31_https.m3u8 | python2 -c 'import sys; list=sys.stdin.readlines();  print list[list.index("#EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=2180000,RESOLUTION=1280x720,CODECS=\"avc1.66.30, mp4a.40.2\""\n")+1]')  && mpv $link &
+}
+
+# RTHK32
+rthk32 () {
+        link=$(curl -s -L https://www.rthk.hk/feeds/dtt/rthktv31_https.m3u8 | python2 -c 'import sys; list=sys.stdin.readlines();  print list[list.index("#EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=2148000,RESOLUTION=1280x720,CODECS=\"avc1.66.30, mp4a.40.2\"\n")+1]')  && mpv $link &
+}
+```
+
+### TO WATCH TWITCH UNDER LINUX:
+
+to install
+
+```
+pip3 install streamlink
+```
+
+to use
+
+```
+streamlink --player mpv https://www.twitch.tv/shinjishinji1 720p
+```
+
+### TO WATCH YOUTUBE UNDER LINUX:
+
+to install
+
+```
+pip3 install install youtube-dl mps-youtube==0.2.7
+```
+
+to use
+
+```
+mpsyt playurl https://www.youtube.com/watch?v=wcnBl6gNIhQ
+```
+
+### TO WATCH VIUTV UNDER LINUX:
+
+to install
+
+```
+$ mpv http://viutv99-i.akamaihd.net/hls/live/265284/live1/stream4/streamPlaylist.m3u8
+$ mpv http://viutv99-i.akamaihd.net/hls/live/265284/live1/master.m3u8
+```
+
+to watch CableTV under linux
+
+```
+$ mpv http://media.fantv.hk/m3u8/archive/channel2.m3u8
+```
+
+export default ({ children }) => <MyLayoutComponent meta={meta}>{children}</MyLayoutComponent>
