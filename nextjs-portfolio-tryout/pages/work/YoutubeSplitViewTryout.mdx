@@ -1,0 +1,35 @@
+import { MyComponent, NewWindowLink, MyLayoutComponent, GithubLink } from './project-layout'
+
+export const meta = {
+  author: 'Rich Haines',
+  date: 'MAR 09, 2021',
+  tags: ['gatsbyjs', 'json'],
+}
+
+# printer board tryout
+
+![](/assets/youtubesplitviewtryout_thumbnail.png)
+
+### PURPOSE:
+
+this is a youtube/mpv viewer working in browser to let you monitor around 20 channel in same screen.
+
+### STATUS:
+
+Currently revamping with gatsby
+
+### POC DEMO:
+
+[https://louiscklaw.github.io/youtube-split-view-tryout/](https://louiscklaw.github.io/youtube-split-view-tryout/)
+
+### REFERENCES / REPOSITORIES:
+
+<GithubLink repo={'louiscklaw/youtube-split-view-tryout'}>
+  louiscklaw/youtube-split-view-tryout
+</GithubLink>
+
+### OTHER YOUTUBE SOLUTION:
+
+[http://afterglowplayer.com/](http://afterglowplayer.com/)
+
+export default ({ children }) => <MyLayoutComponent meta={meta}>{children}</MyLayoutComponent>
