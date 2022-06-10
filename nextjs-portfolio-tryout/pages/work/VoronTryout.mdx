@@ -1,0 +1,31 @@
+import { MyComponent, NewWindowLink, MyLayoutComponent, GithubLink } from './project-layout'
+
+export const meta = {
+  author: 'Rich Haines',
+  date: 'MAR 09, 2021',
+  tags: ['gatsbyjs', 'json'],
+}
+
+# printer board tryout
+
+![](/assets/vorontryout_thumbnail.png)
+
+### PURPOSE:
+
+to build a opensource 3d printer named voron
+
+### REFERENCES / REPOSITORIES:
+
+[https://www.reddit.com/r/voroncorexy](https://www.reddit.com/r/voroncorexy)
+
+<GithubLink repo={'KevinOConnor/klipper'}>KevinOConnor/klipper</GithubLink>
+
+[https://travis-ci.com/github/louiscklaw/Slic3r-settings](https://travis-ci.com/github/louiscklaw/Slic3r-settings)
+
+<GithubLink repo={'louiscklaw/3d-printer-head-pcb'}>louiscklaw/3d-printer-head-pcb</GithubLink>
+
+### PARTS LIBRARY:
+
+[https://www.traceparts.com/](https://www.traceparts.com/)
+
+export default ({ children }) => <MyLayoutComponent meta={meta}>{children}</MyLayoutComponent>
