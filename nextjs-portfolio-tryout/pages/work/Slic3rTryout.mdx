@@ -1,0 +1,39 @@
+import { MyComponent, NewWindowLink, MyLayoutComponent, GithubLink } from './project-layout'
+
+export const meta = {
+  author: 'Rich Haines',
+  date: 'MAR 09, 2021',
+  tags: ['gatsbyjs', 'json'],
+}
+
+# printer board tryout
+
+![](/assets/slic3r_thimbnail.png)
+
+### WHAT IS IT ?:
+
+An easy tool to export gcode from slic3r.
+
+BACKGROUND:
+
+The option of slic3r command linx options wasn’t availabe under linux as described. The tools written to help perorming export 3mf -> save to stl -> export gcode as a batch operation.
+
+### HOW TO USE:
+
+Clone repo:
+
+- run under linux
+- git clone git@github.com:louiscklaw/slic3r_batch_export.git
+- pip install libxdo
+- update the file list in:
+- file_3mf_list # for the list of 3mf files
+- WORKSPACE_DIR and PROJ_HOME
+- SLIC3R_ACTIVE_CONFIG for slic3r configuration wanted
+- SLIC3R_BIN_PATH for slic3r binary
+- python batch_slic3r.py
+
+### REFERENCES / REPOSITORIES:
+
+<GithubLink repo={'louiscklaw/slic3r_batch_export'}>louiscklaw/slic3r_batch_export</GithubLink>
+
+export default ({ children }) => <MyLayoutComponent meta={meta}>{children}</MyLayoutComponent>
