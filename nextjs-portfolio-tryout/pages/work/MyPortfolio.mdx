@@ -1,0 +1,47 @@
+import { MyComponent, NewWindowLink, MyLayoutComponent, GithubLink } from './project-layout'
+
+export const meta = {
+  author: 'Rich Haines',
+  date: 'MAR 09, 2021',
+  tags: ['gatsbyjs', 'json'],
+}
+
+# my portfolio
+
+![](/assets/portfolio_thumbnail.png)
+
+### BACKGROUND INFORMATION:
+
+This is my portfolio. This website contains my project information.
+
+### BUILD FLOW:
+
+explain development flow here Build -> Test -> Merge -> Deploy
+
+- Build
+- Test
+
+  - visual regression test
+
+    - transverse to some key page of the site to get screenshot
+
+    - compare with the expected one(which is last accepted screenshot)
+
+    - if the error greater than threshold, regards as fail
+
+- Merge
+- Deploy
+
+![](/assets/visual_regression.png)
+
+![](/assets/aa0046e8fe670d49100c7281f976c0d9.svg)
+
+### SOME INFORMATION:
+
+production site: [https://louiscklaw.github.io/](https://louiscklaw.github.io/)
+
+### REFERENCES / REPOSITORIES:
+
+<GithubLink repo={'louiscklaw/portfolio-gatsby'}>louiscklaw/portfolio-gatsby</GithubLink>
+
+export default ({ children }) => <MyLayoutComponent meta={meta}>{children}</MyLayoutComponent>
