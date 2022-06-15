@@ -161,9 +161,9 @@ export function ThemeImg({ src }) {
       <img
         src={src}
         style={{
-          maxWidth: 'auto',
-          maxHeight: 'auto',
-          width: '100%',
+          height: 'auto',
+          width: '66%',
+
           borderRadius: '0.5rem',
         }}
       />
