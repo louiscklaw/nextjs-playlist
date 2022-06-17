@@ -33,7 +33,7 @@ function NamePart() {
           >
             WELCOME TO PORTFOLIO OF
           </Typography>
-          <Typography variant="h3" component="h2" align="center" sx={{ opacity: 0.9 }}>
+          <Typography id="my-name" variant="h3" component="h2" align="center" sx={{ opacity: 0.9 }}>
             Louis Law
           </Typography>
           <Typography
