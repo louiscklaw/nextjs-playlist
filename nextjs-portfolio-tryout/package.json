@@ -9,7 +9,7 @@
     "init_dev": "yarn --dev && yarn dev",
     "clear": "rm -rf node_modules && rm -rf .next",
     "docker_ci_rebuild": "docker-compose build && docker-compose rm -s -v -f && docker-compose up -d",
-    "docker_clear": "docker-compose build && docker-compose kill && docker-compose rm -s -v -f",
+    "docker_clear": "docker-compose build && docker-compose kill",
     "docker_rebuild": "yarn docker_clear && sleep 15 && docker-compose up -d && docker-compose logs -f ",
     "gitSync": "git fetch --all && git pull",
     "test": "cypress run",
