@@ -9,6 +9,10 @@ services:
     restart: unless-stopped
     labels:
       - 'traefik.enable=true'
+      - "traefik.http.routers.portfolio-http.rule=Host(`portfolio.iamon99.com`)"
+      - "traefik.http.routers.portfolio-http.entrypoints=web"
+      - "traefik.http.routers.portfolio-http.middlewares=portfolio-https"
+      - "traefik.http.middlewares.portfolio-https.redirectscheme.scheme=https"
       - 'traefik.http.routers.portfolio.rule=Host(`portfolio.iamon99.com`)'
       - 'traefik.http.routers.portfolio.entrypoints=websecure'
       - 'traefik.http.routers.portfolio.tls.certresolver=myresolver'
