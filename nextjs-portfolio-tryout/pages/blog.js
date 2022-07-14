@@ -193,9 +193,7 @@ function PageHeadPart() {
       <Container maxWidth="lg">
         <Stack spacing={4} justifyContent="center" alignItems="center">
           <PageTitle>Blog</PageTitle>
-          <PageSubtitle>
-            A collection of posts I wrote about design process, technology and productivity.
-          </PageSubtitle>
+          <PageSubtitle>A collection of posts I wrote about design process, technology and productivity.</PageSubtitle>
         </Stack>
       </Container>
     </>
@@ -208,10 +206,7 @@ export default function About() {
   return (
     <Container maxWidth="xl">
       <Paper elevation={0}>
-        <FullPageMobileMenu
-          mobile_menu_open={mobile_menu_open}
-          setMobileMenuOpen={setMobileMenuOpen}
-        />
+        <FullPageMobileMenu mobile_menu_open={mobile_menu_open} setMobileMenuOpen={setMobileMenuOpen} />
         <Stack spacing={18} justifyContent="center" alignItems={'center'}>
           <NavMenu setMobileMenuOpen={setMobileMenuOpen} />
 

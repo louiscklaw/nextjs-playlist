@@ -12,13 +12,7 @@ export default function FullPageMobileMenu({ mobile_menu_open, setMobileMenuOpen
   return (
     <Drawer anchor={'top'} open={mobile_menu_open} elevation={1} sx={{ opacity: 0.95 }}>
       <Div100vh>
-        <Stack
-          direction="column"
-          justifyContent="center"
-          alignItems="center"
-          spacing={10}
-          sx={{ height: '100%' }}
-        >
+        <Stack direction="column" justifyContent="center" alignItems="center" spacing={10} sx={{ height: '100%' }}>
           <Link href="/about" underline="hover">
             <Typography variant="h4" color={palette.grey['700']}>
               About

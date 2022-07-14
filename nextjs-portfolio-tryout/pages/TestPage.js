@@ -40,12 +40,10 @@ function BlogContent({ sectionRefs }) {
             style={{ maxWidth: 'auto', maxHeight: 'auto', width: '100%' }}
           />
           <BlogBody>
-            Finding the right path in your design career can be difficult. When you don't realize
-            the goals or don't know if you are making progress every day. OKRs (Objectives & Key
-            Results) is a goal framework adopted by companies like Google to define and track goals.
-            Instead of using it for company goals and business objectives, I'm using the same
-            methodology for personal career planning, Here're my experience and reflection
-            practicing Design OKRs for the last 8 months.
+            Finding the right path in your design career can be difficult. When you don't realize the goals or don't know if you are making progress every day.
+            OKRs (Objectives & Key Results) is a goal framework adopted by companies like Google to define and track goals. Instead of using it for company
+            goals and business objectives, I'm using the same methodology for personal career planning, Here're my experience and reflection practicing Design
+            OKRs for the last 8 months.
           </BlogBody>
         </Box>
 
@@ -53,58 +51,44 @@ function BlogContent({ sectionRefs }) {
           <BlogH3 sectionRef={sectionRefs[0]}>Background</BlogH3>
 
           <BlogBody>
-            I first read about OKR for self-learning, is from Sophia Li's github page. I already
-            knew about OKRs back then but it never occurred to me to use it personally. It was a
-            hard time for me as I was on furlough in my previous company after the initial wave of
-            COVID-19. There was not even a timeline on when I could get back to work. Reading
-            Sophia's progress and her OKR planning was a revelation. I started to use it for
-            planning my career, tracking my progress for job hunting.
+            I first read about OKR for self-learning, is from Sophia Li's github page. I already knew about OKRs back then but it never occurred to me to use it
+            personally. It was a hard time for me as I was on furlough in my previous company after the initial wave of COVID-19. There was not even a timeline
+            on when I could get back to work. Reading Sophia's progress and her OKR planning was a revelation. I started to use it for planning my career,
+            tracking my progress for job hunting.
           </BlogBody>
         </BlogSection>
 
         <BlogSection>
           <BlogH3 sectionRef={sectionRefs[1]}>Plan, Focus, Reflect: A loop to make progress</BlogH3>
           <BlogBody>
-            Just like this, work on delivering your key results every day and take an uninterrupted
-            hour at the end of each month to reflect, plan and mark your progress in Notion. Finding
-            a friend hosting the review session with yourself is also useful too. For me, the target
-            was a bit ambitious and I did not complete all the objectives and tasks that I have set
-            at the beginning of the quarter. Frankly, only few tasks have met the target. But I am
-            very satisfied with this framework, which allows me to set a clear direction and to
-            review it regularly.
+            Just like this, work on delivering your key results every day and take an uninterrupted hour at the end of each month to reflect, plan and mark your
+            progress in Notion. Finding a friend hosting the review session with yourself is also useful too. For me, the target was a bit ambitious and I did
+            not complete all the objectives and tasks that I have set at the beginning of the quarter. Frankly, only few tasks have met the target. But I am
+            very satisfied with this framework, which allows me to set a clear direction and to review it regularly.
           </BlogBody>
 
           <BlogBody>
-            This quote shares the same way I feel when I practice Design OKR. As long as I'm
-            incrementally better than myself yesterday, no matter how small the changes I make, it
-            could have compound effect toward a success. Now that a big objective of my Design OKR
-            has completed, I'm still searching for my next one, could be building my own product,
-            earning side income, or for real to speak at design events. Before that happens, let me
-            know what you think about this approach on Twitter and I would love to answer any of
-            your questions!
+            This quote shares the same way I feel when I practice Design OKR. As long as I'm incrementally better than myself yesterday, no matter how small the
+            changes I make, it could have compound effect toward a success. Now that a big objective of my Design OKR has completed, I'm still searching for my
+            next one, could be building my own product, earning side income, or for real to speak at design events. Before that happens, let me know what you
+            think about this approach on Twitter and I would love to answer any of your questions!
           </BlogBody>
         </BlogSection>
 
         <BlogSection>
           <BlogH3 sectionRef={sectionRefs[2]}>this is helloworld</BlogH3>
           <BlogBody>
-            Just like this, work on delivering your key results every day and take an uninterrupted
-            hour at the end of each month to reflect, plan and mark your progress in Notion. Finding
-            a friend hosting the review session with yourself is also useful too. For me, the target
-            was a bit ambitious and I did not complete all the objectives and tasks that I have set
-            at the beginning of the quarter. Frankly, only few tasks have met the target. But I am
-            very satisfied with this framework, which allows me to set a clear direction and to
-            review it regularly.
+            Just like this, work on delivering your key results every day and take an uninterrupted hour at the end of each month to reflect, plan and mark your
+            progress in Notion. Finding a friend hosting the review session with yourself is also useful too. For me, the target was a bit ambitious and I did
+            not complete all the objectives and tasks that I have set at the beginning of the quarter. Frankly, only few tasks have met the target. But I am
+            very satisfied with this framework, which allows me to set a clear direction and to review it regularly.
           </BlogBody>
 
           <BlogBody>
-            This quote shares the same way I feel when I practice Design OKR. As long as I'm
-            incrementally better than myself yesterday, no matter how small the changes I make, it
-            could have compound effect toward a success. Now that a big objective of my Design OKR
-            has completed, I'm still searching for my next one, could be building my own product,
-            earning side income, or for real to speak at design events. Before that happens, let me
-            know what you think about this approach on Twitter and I would love to answer any of
-            your questions!
+            This quote shares the same way I feel when I practice Design OKR. As long as I'm incrementally better than myself yesterday, no matter how small the
+            changes I make, it could have compound effect toward a success. Now that a big objective of my Design OKR has completed, I'm still searching for my
+            next one, could be building my own product, earning side income, or for real to speak at design events. Before that happens, let me know what you
+            think about this approach on Twitter and I would love to answer any of your questions!
           </BlogBody>
         </BlogSection>
       </Stack>
@@ -138,14 +122,10 @@ export default function TestPage() {
   useEffect(() => {
     let h1_array_offset_top = []
 
-    document
-      .querySelectorAll('.markdown-subtitle')
-      .forEach(el => h1_array_offset_top.push(el.offsetTop))
+    document.querySelectorAll('.markdown-subtitle').forEach(el => h1_array_offset_top.push(el.offsetTop))
 
     const scrollHandler = () => {
-      const scrollPosition =
-        (document.documentElement && document.documentElement.scrollTop) ||
-        (document.body && document.body.scrollTop)
+      const scrollPosition = (document.documentElement && document.documentElement.scrollTop) || (document.body && document.body.scrollTop)
 
       console.log({ scrolling: true, scrollPosition, h1_array_offset_top })
 
@@ -165,10 +145,7 @@ export default function TestPage() {
   return (
     <Container maxWidth="xl">
       <Paper elevation={0}>
-        <FullPageMobileMenu
-          mobile_menu_open={mobile_menu_open}
-          setMobileMenuOpen={setMobileMenuOpen}
-        />
+        <FullPageMobileMenu mobile_menu_open={mobile_menu_open} setMobileMenuOpen={setMobileMenuOpen} />
         <Stack spacing={18} justifyContent="center" alignItems={'center'}>
           <NavMenu setMobileMenuOpen={setMobileMenuOpen} />
 

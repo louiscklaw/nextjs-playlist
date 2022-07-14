@@ -144,10 +144,7 @@ export default function About() {
         <Paper elevation={0}>
           <Stack spacing={18} justifyContent="center" alignItems={'center'}>
             <NavMenu setMobileMenuOpen={setMobileMenuOpen} />
-            <FullPageMobileMenu
-              mobile_menu_open={mobile_menu_open}
-              setMobileMenuOpen={setMobileMenuOpen}
-            />
+            <FullPageMobileMenu mobile_menu_open={mobile_menu_open} setMobileMenuOpen={setMobileMenuOpen} />
 
             {/* content here ? */}
             <PageHead />

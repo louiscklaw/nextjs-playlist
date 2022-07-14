@@ -16,9 +16,7 @@ export function ViewPortMeasureProvider({ children }) {
 
   return (
     <>
-      <ViewPortMeasureContext.Provider value={{ hello: 'world', xs_up, md_up, xl_up }}>
-        {children}
-      </ViewPortMeasureContext.Provider>
+      <ViewPortMeasureContext.Provider value={{ hello: 'world', xs_up, md_up, xl_up }}>{children}</ViewPortMeasureContext.Provider>
     </>
   )
 }

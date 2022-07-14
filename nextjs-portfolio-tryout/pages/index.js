@@ -18,33 +18,16 @@ function NamePart() {
 
   return (
     <>
-      <Stack
-        justifyContent={'center'}
-        alignItems={'center'}
-        sx={{ height: '100vh', maxHeight: '90vh' }}
-      >
+      <Stack justifyContent={'center'} alignItems={'center'} sx={{ height: '100vh', maxHeight: '90vh' }}>
         <Stack direction="column" spacing={5}>
-          <Typography
-            variant="body1"
-            component="h1"
-            align="center"
-            color={palette.grey['800']}
-            sx={{ opacity: 0.9 }}
-          >
+          <Typography variant="body1" component="h1" align="center" color={palette.grey['800']} sx={{ opacity: 0.9 }}>
             WELCOME TO PORTFOLIO OF
           </Typography>
           <Typography id="my-name" variant="h3" component="h2" align="center" sx={{ opacity: 0.9 }}>
             Louis Law
           </Typography>
-          <Typography
-            variant="body1"
-            component="h2"
-            align="center"
-            color={palette.grey['800']}
-            sx={{ opacity: 0.9 }}
-          >
-            Full-stack UI/UX designer crafting websites &<br /> mobile applications with bespoke
-            experience.
+          <Typography variant="body1" component="h2" align="center" color={palette.grey['800']} sx={{ opacity: 0.9 }}>
+            Full-stack UI/UX designer crafting websites &<br /> mobile applications with bespoke experience.
           </Typography>
 
           <Stack direction={{ xs: 'column', md: 'row' }} spacing={2} justifyContent="space-between">
@@ -253,9 +236,7 @@ function SecondPart() {
                 />
 
                 <Box p={3}>
-                  <Typography variant="h5">
-                    Takeaways from building a COVID-19 curatorial side project
-                  </Typography>
+                  <Typography variant="h5">Takeaways from building a COVID-19 curatorial side project</Typography>
                   <Typography variant="body1" color={palette.dimmed.main}>
                     I built a free resources curatorial site for COVID-19, and here are my lessons
                   </Typography>
@@ -285,8 +266,7 @@ function ThirdPart() {
                 Tools & Resources
               </Typography>
               <Typography variant="body1" sx={{ color: palette.grey['600'] }}>
-                Best resources and tools I have been using. Guide on getting started in design &
-                code.
+                Best resources and tools I have been using. Guide on getting started in design & code.
               </Typography>
             </Stack>
             <Button variant="outlined" color="dimmed" endIcon={<FaArrowRight />}>
@@ -334,10 +314,7 @@ export default function Index() {
   return (
     <Container maxWidth="xl">
       <Paper elevation={0}>
-        <FullPageMobileMenu
-          mobile_menu_open={mobile_menu_open}
-          setMobileMenuOpen={setMobileMenuOpen}
-        />
+        <FullPageMobileMenu mobile_menu_open={mobile_menu_open} setMobileMenuOpen={setMobileMenuOpen} />
         <NavMenu setMobileMenuOpen={setMobileMenuOpen} />
         <Stack rowGap={18} justifyContent="center" alignItems={'center'}>
           <NamePart />

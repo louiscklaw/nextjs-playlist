@@ -4,14 +4,7 @@ import { useRouter } from 'next/router'
 import * as React from 'react'
 import { FaArrowRight, FaTag } from 'react-icons/fa'
 
-export default function ProjectCard({
-  img_src,
-  title,
-  subtitle,
-  button_link,
-  category_text,
-  button_text,
-}) {
+export default function ProjectCard({ img_src, title, subtitle, button_link, category_text, button_text }) {
   const { palette } = useTheme()
   const router = useRouter()
 
@@ -31,12 +24,7 @@ export default function ProjectCard({
             <Typography variant="body1" sx={{ color: palette.grey['600'] }}>
               {subtitle}
             </Typography>
-            <Button
-              onClick={e => router.push(button_link)}
-              variant="outlined"
-              color="primary"
-              endIcon={<FaArrowRight />}
-            >
+            <Button onClick={e => router.push(button_link)} variant="outlined" color="primary" endIcon={<FaArrowRight />}>
               {button_text || 'View Process'}
             </Button>
           </Stack>

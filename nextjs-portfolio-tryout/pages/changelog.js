@@ -38,8 +38,7 @@ let change_log_json = [
     date: 'May 31, 2022',
     log: [
       <>
-        louis law shamelessly clone design from{' '}
-        <Link href="https://desktopofsamuel.com/">Samuel Wong</Link>
+        louis law shamelessly clone design from <Link href="https://desktopofsamuel.com/">Samuel Wong</Link>
       </>,
     ],
   },
@@ -50,12 +49,7 @@ function UpdateTimelineItem({ item }) {
   return (
     <>
       <TimelineItem>
-        <TimelineOppositeContent
-          sx={{ m: 'auto 0' }}
-          align="right"
-          variant="body2"
-          color="text.secondary"
-        >
+        <TimelineOppositeContent sx={{ m: 'auto 0' }} align="right" variant="body2" color="text.secondary">
           {date}
         </TimelineOppositeContent>
         <TimelineSeparator>
@@ -85,21 +79,10 @@ function PageContent() {
       <Grid container spacing={3}>
         <Grid item xs={12} md={4}>
           <Stack rowGap={2}>
-            <Typography
-              variant="h4"
-              component="h2"
-              fontWeight="bold"
-              sx={{ opacity: 0.9 }}
-              align={md_up ? 'left' : 'center'}
-            >
+            <Typography variant="h4" component="h2" fontWeight="bold" sx={{ opacity: 0.9 }} align={md_up ? 'left' : 'center'}>
               Changelog
             </Typography>
-            <Typography
-              variant="body1"
-              component="h3"
-              sx={{ opacity: 0.9 }}
-              align={md_up ? 'left' : 'center'}
-            >
+            <Typography variant="body1" component="h3" sx={{ opacity: 0.9 }} align={md_up ? 'left' : 'center'}>
               A jot what happened on this page
             </Typography>
           </Stack>
@@ -125,10 +108,7 @@ export default function About() {
         <Paper elevation={0}>
           <Stack spacing={18} justifyContent="center" alignItems={'center'}>
             <NavMenu setMobileMenuOpen={setMobileMenuOpen} />
-            <FullPageMobileMenu
-              mobile_menu_open={mobile_menu_open}
-              setMobileMenuOpen={setMobileMenuOpen}
-            />
+            <FullPageMobileMenu mobile_menu_open={mobile_menu_open} setMobileMenuOpen={setMobileMenuOpen} />
 
             {/* change log here ? */}
             <PageContent />

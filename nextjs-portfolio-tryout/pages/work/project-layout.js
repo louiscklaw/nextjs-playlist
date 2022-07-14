@@ -61,14 +61,10 @@ export function MyLayoutComponent(props) {
   useEffect(() => {
     let h1_array_offset_top = []
 
-    document
-      .querySelectorAll('.markdown-subtitle')
-      .forEach(el => h1_array_offset_top.push(el.offsetTop))
+    document.querySelectorAll('.markdown-subtitle').forEach(el => h1_array_offset_top.push(el.offsetTop))
 
     const scrollHandler = () => {
-      const scrollPosition =
-        (document.documentElement && document.documentElement.scrollTop) ||
-        (document.body && document.body.scrollTop)
+      const scrollPosition = (document.documentElement && document.documentElement.scrollTop) || (document.body && document.body.scrollTop)
 
       console.log({ scrolling: true, scrollPosition, h1_array_offset_top })
 
@@ -89,10 +85,7 @@ export function MyLayoutComponent(props) {
     <>
       <Container maxWidth="xl">
         <Paper elevation={0}>
-          <FullPageMobileMenu
-            mobile_menu_open={mobile_menu_open}
-            setMobileMenuOpen={setMobileMenuOpen}
-          />
+          <FullPageMobileMenu mobile_menu_open={mobile_menu_open} setMobileMenuOpen={setMobileMenuOpen} />
           <Stack spacing={{ xs: 10, md: 18 }} justifyContent="center" alignItems={'center'}>
             <NavMenu setMobileMenuOpen={setMobileMenuOpen} />
             <Container maxWidth="xl">

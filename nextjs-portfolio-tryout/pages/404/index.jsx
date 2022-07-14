@@ -11,13 +11,7 @@ export default function NotFound() {
   return (
     <>
       <Paper elevation={0} sx={{ backgroundColor: theme.palette.background.paper.main }}>
-        <Stack
-          direction="column"
-          spacing={10}
-          justifyContent="center"
-          alignItems="center"
-          sx={{ height: height_100vh }}
-        >
+        <Stack direction="column" spacing={10} justifyContent="center" alignItems="center" sx={{ height: height_100vh }}>
           <Box>
             <img src={NotFoundSvg.src} style={{ width: '100%', maxWidth: 'auto' }} />
           </Box>

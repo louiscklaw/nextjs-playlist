@@ -46,8 +46,7 @@ export default function ContactsPart() {
                 SUBSCRIBE
               </Typography>
               <Typography variant="body2" color="primary" sx={{ opacity: 0.9 }}>
-                I write regularly on the subject of design and technology. Feel free to subscribe
-                via RSS or follow me on Medium.
+                I write regularly on the subject of design and technology. Feel free to subscribe via RSS or follow me on Medium.
               </Typography>
             </Stack>
           </Grid>

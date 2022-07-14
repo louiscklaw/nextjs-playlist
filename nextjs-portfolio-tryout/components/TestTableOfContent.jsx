@@ -32,21 +32,14 @@ export default function TestTableOfContent({ toc_active, toc_list }) {
                   sx={{
                     borderLeft: isActive ? '5px solid #800000' : '1px solid #ddd',
                     opacity: 0.9,
-                    backgroundColor: isActive
-                      ? 'rgba(128, 0, 0, 0.05)'
-                      : isOver
-                      ? 'rgba(128, 128, 128, 0.1)'
-                      : 'transparent',
+                    backgroundColor: isActive ? 'rgba(128, 0, 0, 0.05)' : isOver ? 'rgba(128, 128, 128, 0.1)' : 'transparent',
                   }}
                   pl="1rem"
                   onMouseOver={() => setIsOver(index)}
                   onMouseOut={() => setIsOver(null)}
                   // onClick={() => setTocActive(index)}
                 >
-                  <Typography
-                    variant={'body1'}
-                    sx={{ fontWeight: isActive ? 'bold' : 'none', opacity: 0.9 }}
-                  >
+                  <Typography variant={'body1'} sx={{ fontWeight: isActive ? 'bold' : 'none', opacity: 0.9 }}>
                     {item}
                   </Typography>
                 </Box>

@@ -1,3 +1,5 @@
+**/*lock
+**/.next
 **/*del
 cypress/screenshots/*
 cypress/videos/*

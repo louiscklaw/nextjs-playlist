@@ -14,7 +14,9 @@
     "gitUpdate": "git add . && git commit -m\"update nextjs-portfolio-tryout, \" && yarn gitSync && git push",
     "test": "cypress run",
     "test_dev": "yarn --dev && yarn cypress open",
-    "sync_rebuild": "yarn gitSync && yarn docker_rebuild"
+    "sync_rebuild": "yarn gitSync && yarn docker_rebuild",
+    "lint:format": "prettier --write **/*.{js,jsx,ts,tsx}",
+    "husky_install": "husky install"
   },
   "dependencies": {
     "@emotion/cache": "latest",
@@ -27,9 +29,14 @@
     "@mui/lab": "^5.0.0-alpha.83",
     "@mui/material": "latest",
     "@next/mdx": "^12.1.6",
+    "cypress": "latest",
+    "cypress-visual-regression": "^1.7.0",
+    "husky": "^8.0.1",
     "next": "latest",
+    "prettier": "latest",
     "prism-react-renderer": "^1.3.3",
     "prop-types": "latest",
+    "puppeteer": "latest",
     "react": "latest",
     "react-div-100vh": "^0.7.0",
     "react-dom": "latest",
@@ -41,10 +48,5 @@
     "remark-frontmatter": "^4.0.1",
     "remark-gfm": "^3.0.1"
   },
-  "devDependencies": {
-    "cypress": "latest",
-    "cypress-visual-regression": "^1.7.0",
-    "prettier": "latest",
-    "puppeteer": "latest"
-  }
+  "devDependencies": {}
 }

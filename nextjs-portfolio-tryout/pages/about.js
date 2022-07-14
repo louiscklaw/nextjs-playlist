@@ -55,10 +55,7 @@ function CareerEntry({ job_title, company, company_about, company_logo, year }) 
             </Stack>
           </Grid>
           <Grid item xs={4}>
-            <img
-              src={company_logo}
-              style={{ width: '100px', maxWidth: 'auto', maxHeight: 'auto' }}
-            />
+            <img src={company_logo} style={{ width: '100px', maxWidth: 'auto', maxHeight: 'auto' }} />
           </Grid>
         </Grid>
       </Grid>
@@ -90,10 +87,9 @@ function HelloPart() {
               Hello, my name is Louis Law.
             </Typography>
             <Typography variant="body1" sx={{ opacity: 0.9 }}>
-              I got into product design because I'm deeply passionate about technology and how it
-              profoundly changes our way of living. Working on range of problems, including finance,
-              travel and communication, I help solve users' problem and creating delightful
-              interfaces & experience for the past 6 years.
+              I got into product design because I'm deeply passionate about technology and how it profoundly changes our way of living. Working on range of
+              problems, including finance, travel and communication, I help solve users' problem and creating delightful interfaces & experience for the past 6
+              years.
             </Typography>
           </Stack>
           <Stack direction={{ xs: 'column', md: 'row' }} spacing={2} justifyContent="space-between">
@@ -105,12 +101,7 @@ function HelloPart() {
       </Container>
 
       <Container maxWidth="lg">
-        <img
-          src="https://desktopofsamuel.com/static/ea59cfb3888098a666295d020dca2dee/9c00f/profile-2014.webp"
-          width="100%"
-          maxWidth="auto"
-          maxHeight="auto"
-        />
+        <img src="https://desktopofsamuel.com/static/ea59cfb3888098a666295d020dca2dee/9c00f/profile-2014.webp" width="100%" maxWidth="auto" maxHeight="auto" />
       </Container>
 
       <Container maxWidth="lg">
@@ -127,9 +118,8 @@ function HelloPart() {
                   INTERNED AT APPLE
                 </Typography>
                 <Typography variant="body1" sx={{ opacity: 0.9 }}>
-                  Majoring in Arts in college, I took a gap year working in iTunes & App Store,
-                  Apple. This valuable experience cultivated my interest and knowledge in digital
-                  products.
+                  Majoring in Arts in college, I took a gap year working in iTunes & App Store, Apple. This valuable experience cultivated my interest and
+                  knowledge in digital products.
                 </Typography>
               </Stack>
             </Grid>
@@ -139,8 +129,8 @@ function HelloPart() {
                   STARTING MY AGENCY
                 </Typography>
                 <Typography variant="body1" sx={{ opacity: 0.9 }}>
-                  With growing freelance web & design projects, I founded a digital agency, Playa,
-                  to help small businesses, entrepreneurs, and non-profits launching their projects.
+                  With growing freelance web & design projects, I founded a digital agency, Playa, to help small businesses, entrepreneurs, and non-profits
+                  launching their projects.
                 </Typography>
               </Stack>
             </Grid>
@@ -150,8 +140,8 @@ function HelloPart() {
                   SWITCHING TO PRODUCT
                 </Typography>
                 <Typography variant="body1" sx={{ opacity: 0.9 }}>
-                  Currently, I work as a UX/UI consultant in finance sector. Before that, I worked
-                  as a Principal Designer at Hyperair, a travel start-up based in Hong Kong.
+                  Currently, I work as a UX/UI consultant in finance sector. Before that, I worked as a Principal Designer at Hyperair, a travel start-up based
+                  in Hong Kong.
                 </Typography>
               </Stack>
             </Grid>
@@ -241,21 +231,9 @@ function CVPart() {
                   </Grid>
                   <Grid item xs={11} md={10} flexDirection="column">
                     <Stack direction="column" spacing={5}>
-                      <EducationEntry
-                        first="City University of Hong Kong"
-                        second="Electronic and Communication Engineering (BEng.)"
-                        date="2011 - 2015"
-                      />
-                      <EducationEntry
-                        first="Tsing Yi IVE"
-                        second="Electrical Engineering"
-                        date="2011 - 2015"
-                      />
-                      <EducationEntry
-                        first="KTTI"
-                        second="Electronic and Communication Engineering"
-                        date="2011 - 2015"
-                      />
+                      <EducationEntry first="City University of Hong Kong" second="Electronic and Communication Engineering (BEng.)" date="2011 - 2015" />
+                      <EducationEntry first="Tsing Yi IVE" second="Electrical Engineering" date="2011 - 2015" />
+                      <EducationEntry first="KTTI" second="Electronic and Communication Engineering" date="2011 - 2015" />
                     </Stack>
                   </Grid>
                 </Grid>
@@ -370,10 +348,7 @@ export default function About() {
   return (
     <Container maxWidth="xl">
       <Paper elevation={0}>
-        <FullPageMobileMenu
-          mobile_menu_open={mobile_menu_open}
-          setMobileMenuOpen={setMobileMenuOpen}
-        />
+        <FullPageMobileMenu mobile_menu_open={mobile_menu_open} setMobileMenuOpen={setMobileMenuOpen} />
         <Stack spacing={18} justifyContent="center" alignItems={'center'}>
           <NavMenu setMobileMenuOpen={setMobileMenuOpen} />
           <HelloPart />

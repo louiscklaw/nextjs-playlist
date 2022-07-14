@@ -11,11 +11,7 @@ import theme from 'prism-react-renderer/themes/nightOwl'
 import { Box, Typography } from '@mui/material'
 
 function LineNo({ children }) {
-  return (
-    <div style={{ display: 'inline-block', width: '2em', userSelect: 'none', opacity: '0.3' }}>
-      {children}
-    </div>
-  )
+  return <div style={{ display: 'inline-block', width: '2em', userSelect: 'none', opacity: '0.3' }}>{children}</div>
 }
 
 export default ({ children }) => {

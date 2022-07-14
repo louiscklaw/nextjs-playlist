@@ -28,11 +28,7 @@ function TableOfContent() {
                 p="1rem"
                 sx={{
                   borderLeft: isActive ? '5px solid #800000' : '1px solid #ddd',
-                  backgroundColor: isActive
-                    ? 'rgba(128, 0, 0, 0.05)'
-                    : isOver
-                    ? 'rgba(128, 128, 128, 0.1)'
-                    : 'transparent',
+                  backgroundColor: isActive ? 'rgba(128, 0, 0, 0.05)' : isOver ? 'rgba(128, 128, 128, 0.1)' : 'transparent',
                 }}
                 pl="2rem"
                 onMouseOver={() => setIsOver(index)}

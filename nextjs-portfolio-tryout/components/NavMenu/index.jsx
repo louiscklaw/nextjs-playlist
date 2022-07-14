@@ -31,10 +31,7 @@ export default function NavMenu({ setMobileMenuOpen }) {
         }}
       >
         <Link href="#" underline="hover">
-          <Typography
-            variant="h6"
-            sx={{ fontSize: { xs: '1rem', md: '1.5rem' }, fontWeight: 'bold', opacity: 0.9 }}
-          >
+          <Typography variant="h6" sx={{ fontSize: { xs: '1rem', md: '1.5rem' }, fontWeight: 'bold', opacity: 0.9 }}>
             Louis Law
           </Typography>
         </Link>
@@ -66,11 +63,7 @@ export default function NavMenu({ setMobileMenuOpen }) {
         </Box>
 
         {/* mobile menu */}
-        <IconButton
-          disableRipple
-          onClick={e => setMobileMenuOpen(true)}
-          sx={{ display: { xs: 'block', md: 'none' } }}
-        >
+        <IconButton disableRipple onClick={e => setMobileMenuOpen(true)} sx={{ display: { xs: 'block', md: 'none' } }}>
           <FiMenu />
         </IconButton>
       </Stack>

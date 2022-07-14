@@ -4,14 +4,7 @@ import { useRouter } from 'next/router'
 import * as React from 'react'
 import { FaArrowRight } from 'react-icons/fa'
 
-export default function HalfWidthProjectCard({
-  img_src,
-  title,
-  subtitle,
-  button_link,
-  category_text,
-  button_text,
-}) {
+export default function HalfWidthProjectCard({ img_src, title, subtitle, button_link, category_text, button_text }) {
   const { palette } = useTheme()
   const router = useRouter()
 
@@ -30,12 +23,7 @@ export default function HalfWidthProjectCard({
 
         <img src={img_src} style={{ maxWidth: '66%', width: 'auto', height: 'auto' }} />
 
-        <Button
-          onClick={e => router.push(button_link)}
-          variant="outlined"
-          color="primary"
-          endIcon={<FaArrowRight />}
-        >
+        <Button onClick={e => router.push(button_link)} variant="outlined" color="primary" endIcon={<FaArrowRight />}>
           {button_text || 'View Process'}
         </Button>
       </Stack>

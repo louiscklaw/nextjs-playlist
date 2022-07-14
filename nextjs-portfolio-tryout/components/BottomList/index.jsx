@@ -66,12 +66,7 @@ export default function BottomList() {
           </Grid>
         )}
         <Stack p={1} sx={{ width: '100%' }}>
-          <Typography
-            variant="caption"
-            color={palette.primary.main}
-            align="center"
-            sx={{ opacity: 0.9 }}
-          >
+          <Typography variant="caption" color={palette.primary.main} align="center" sx={{ opacity: 0.9 }}>
             CODE BY LOUIS LAW © 2018 - 2022
           </Typography>
         </Stack>
