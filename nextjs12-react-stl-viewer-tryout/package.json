@@ -1,0 +1,23 @@
+{
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "prettier_file": "prettier --write \"./pages/**/*.{js,jsx}\"",
+    "post-update": "echo \"codesandbox preview only, need an update\" && yarn upgrade --latest",
+    "gitUpdate": "git add . && git commit -m\"update nextjs12-helloworld, \"",
+    "init_dev": "yarn --dev && yarn dev",
+    "clear": "rm -rf node_modules && rm -rf .next"
+  },
+  "dependencies": {
+    "next": "latest",
+    "react": "latest",
+    "react-dom": "latest",
+    "react-stl-viewer": "^2.1.2",
+    "three": "^0.132.2"
+  },
+  "devDependencies": {
+    "prettier": "latest",
+    "puppeteer": "latest"
+  }
+}
