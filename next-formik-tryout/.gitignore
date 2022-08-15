@@ -1,13 +1,4 @@
-*.lock
-**/*lock
-**/.next
-**/*del
-cypress/screenshots/*
-cypress/videos/*
-
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
-
-cypress/snapshots
 
 # dependencies
 /node_modules
@@ -26,6 +17,7 @@ cypress/snapshots
 
 # misc
 .DS_Store
+*.pem
 
 # debug
 npm-debug.log*
@@ -37,3 +29,6 @@ yarn-error.log*
 .env.development.local
 .env.test.local
 .env.production.local
+
+# vercel
+.vercel

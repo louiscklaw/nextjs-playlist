@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "gitUpdate": "git add . && git commit -m \"update\" && git push"
+    "gitUpdate": "git add . && git commit -m \"update\" && git push",
+    "husky_install": "husky install"
   },
   "repository": {
     "type": "git",
@@ -17,5 +18,8 @@
   "bugs": {
     "url": "https://github.com/louiscklaw/nextjs-playlist/issues"
   },
-  "homepage": "https://github.com/louiscklaw/nextjs-playlist#readme"
+  "homepage": "https://github.com/louiscklaw/nextjs-playlist#readme",
+  "dependencies": {
+    "husky": "^8.0.1"
+  }
 }

@@ -1,0 +1,26 @@
+{
+  "name": "next-formik-tryout",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "prettier_file": "prettier --write \"./pages/**/*.{js,jsx}\"",
+    "gitUpdate": "git add . && git commit -m\"update next-formik-tryout,\"",
+    "init_dev": "yarn --dev && yarn dev"
+  },
+  "dependencies": {
+    "formik": "^2.2.9",
+    "next": "11.1.2",
+    "react": "17.0.2",
+    "react-dom": "17.0.2"
+  },
+  "devDependencies": {
+    "eslint": "latest",
+    "eslint-config-next": "latest",
+    "prettier": "^2.6.2",
+    "puppeteer": "^11.0.0"
+  }
+}
