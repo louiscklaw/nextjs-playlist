@@ -39,6 +39,7 @@ export default function NameCard() {
             justifyContent="center"
             alignItems="center"
             style={{ height: '100%' }}
+            spacing={2}
           >
             <Grid item xs={6} container justifyContent="center">
               <Box>
@@ -53,7 +54,7 @@ export default function NameCard() {
               </Box>
             </Grid>
             <Grid item xs={6}>
-              <Box>
+              <Stack spacing={0.2}>
                 <Typography variant={'h5'}>Louis Law</Typography>
                 <Typography variant={'body1'} color={'#7F8C8D'}>
                   @louiscklaw
@@ -64,14 +65,40 @@ export default function NameCard() {
                 <Typography variant={'body1'} color={'#7F8C8D'}>
                   developer
                 </Typography>
-                <FaBeer />
-                <FaWhatsapp />
-                <FaPhoneAlt />
-                <FaGithub />
-                <FaLinkedinIn />
-                <FaSlack />
-                <FaFigma />
-              </Box>
+
+                <Grid container direction="row" spacing={1}>
+                  <Grid item>
+                    <FaWhatsapp />
+                  </Grid>
+                  <Grid item>
+                    <Box>
+                      <FaPhoneAlt />
+                    </Box>
+                  </Grid>
+                  <Grid item>
+                    <Box>
+                      <FaGithub />
+                    </Box>
+                  </Grid>
+                  <Grid item>
+                    <Box>
+                      <FaLinkedinIn />
+                    </Box>
+                  </Grid>
+
+                  <Grid item>
+                    <Box>
+                      <FaSlack />
+                    </Box>
+                  </Grid>
+
+                  <Grid item>
+                    <Box>
+                      <FaFigma />
+                    </Box>
+                  </Grid>
+                </Grid>
+              </Stack>
             </Grid>
           </Grid>
         </Box>
