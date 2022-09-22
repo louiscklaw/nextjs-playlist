@@ -7,6 +7,7 @@ services:
     ports:
       - '8082:3000'
     restart: unless-stopped
+
     labels:
       - 'traefik.enable=true'
       - 'traefik.http.routers.portfolio-http.rule=Host(`portfolio.iamon99.com`)'
@@ -17,8 +18,12 @@ services:
       - 'traefik.http.routers.portfolio.entrypoints=websecure'
       - 'traefik.http.routers.portfolio.tls.certresolver=myresolver'
       - 'traefik.http.services.portfolio.loadbalancer.server.port=3000'
+    working_dir: /app
 
-networks:
-  default:
-    external:
-      name: traefik-proxy-network
+    volumes:
+      - $PWD:/app
+    command: sleep infinity
+# networks:
+#   default:
+#     external:
+#       name: traefik-proxy-network
