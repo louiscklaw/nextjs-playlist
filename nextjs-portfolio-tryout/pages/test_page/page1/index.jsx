@@ -14,7 +14,7 @@ export default function HelloworldPage() {
               width: 'calc( ( 100% / 7 ) * 2 )',
             }}
           >
-            <Box>
+            <Box style={{ height: '100%' }}>
               <NameCard />
             </Box>
           </Grid>

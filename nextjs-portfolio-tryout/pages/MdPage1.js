@@ -1,4 +1,4 @@
-const date = 'MAR 09, 2021'
+const date = 'MAR 09, 2021';
 const markdown = `
 # Navigating Design Career with Design OKRs
 
@@ -55,7 +55,7 @@ has completed, I'm still searching for my next one, could be building my own pro
 earning side income, or for real to speak at design events. Before that happens, let me
 know what you think about this approach on Twitter and I would love to answer any of
 your questions!
-`
+`;
 
-export { date, markdown }
-export default () => <></>
+export { date, markdown };
+export default () => <></>;

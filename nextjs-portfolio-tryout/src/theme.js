@@ -1,6 +1,6 @@
 // https://flatuicolors.com/palette/gb
 
-import { createTheme } from '@mui/material/styles'
+import { createTheme } from '@mui/material/styles';
 
 // Create a theme instance.
 const theme = createTheme({
@@ -13,7 +13,11 @@ const theme = createTheme({
     success: { lighten: '#4cd137', main: '#44bd32' },
     warning: { lighten: '#fbc531', main: '#e1b12c' },
     dimmed: { lighten: '#7f8fa6', main: '#718093' },
-    deep_background: { lighten: '#f5f6fa', main: '#2f3640', contrastText: '#f5f6fa' },
+    deep_background: {
+      lighten: '#f5f6fa',
+      main: '#2f3640',
+      contrastText: '#f5f6fa',
+    },
   },
 
   components: {
@@ -34,6 +38,6 @@ const theme = createTheme({
       },
     },
   },
-})
+});
 
-export default theme
+export default theme;

@@ -1,21 +1,34 @@
-import { useTheme, Box, Button, Grid, Paper, Stack, Typography } from '@mui/material'
-import Container from '@mui/material/Container'
-import * as React from 'react'
-import { useState } from 'react'
-import { FaArrowRight, FaFacebookSquare, FaGithub, FaTwitterSquare } from 'react-icons/fa'
+import {
+  useTheme,
+  Box,
+  Button,
+  Grid,
+  Paper,
+  Stack,
+  Typography,
+} from '@mui/material';
+import Container from '@mui/material/Container';
+import * as React from 'react';
+import { useState } from 'react';
+import {
+  FaArrowRight,
+  FaFacebookSquare,
+  FaGithub,
+  FaTwitterSquare,
+} from 'react-icons/fa';
 
-import BottomList from '../components/BottomList'
-import NavMenu from '../components/NavMenu'
-import FullPageMobileMenu from '../components/FullPageMobileMenu'
-import ContactsPart from '../components/ContactsPart'
-import Link from '../src/Link'
+import BottomList from '../components/BottomList';
+import NavMenu from '../components/NavMenu';
+import FullPageMobileMenu from '../components/FullPageMobileMenu';
+import ContactsPart from '../components/ContactsPart';
+import Link from '../src/Link';
 
 function PostDate({ children }) {
   return (
     <Typography variant="subtitle2" sx={{ opacity: 0.9 }}>
       {children}
     </Typography>
-  )
+  );
 }
 
 function PostTitle({ children }) {
@@ -23,7 +36,7 @@ function PostTitle({ children }) {
     <Typography variant="title" sx={{ fontWeight: 'bold', opacity: 0.9 }}>
       {children}
     </Typography>
-  )
+  );
 }
 
 // featured ?  all post ?
@@ -32,7 +45,7 @@ function PostCategoryTitle({ children }) {
     <Typography variant="h6" sx={{ opacity: 0.9 }}>
       {children}
     </Typography>
-  )
+  );
 }
 
 function PostGlances({ children }) {
@@ -40,15 +53,23 @@ function PostGlances({ children }) {
     <Typography variant="subtitle2" sx={{ opacity: 0.9 }}>
       {children}
     </Typography>
-  )
+  );
 }
 
 function FullWidthPostLink({ post_img, date, title, glances, href_to = '#' }) {
   return (
     <>
-      <Grid container spacing={2} justifyContent="flex-start" alignItems="center">
+      <Grid
+        container
+        spacing={2}
+        justifyContent="flex-start"
+        alignItems="center"
+      >
         <Grid item xs={4}>
-          <img src={post_img} style={{ maxWidth: 'auto', maxHeight: 'auto', width: '100%' }} />
+          <img
+            src={post_img}
+            style={{ maxWidth: 'auto', maxHeight: 'auto', width: '100%' }}
+          />
         </Grid>
         <Grid item xs={8}>
           <Stack spacing={1}>
@@ -63,7 +84,7 @@ function FullWidthPostLink({ post_img, date, title, glances, href_to = '#' }) {
         </Grid>
       </Grid>
     </>
-  )
+  );
 }
 
 function AllPost() {
@@ -95,7 +116,7 @@ function AllPost() {
         </Grid>
       </Grid>
     </>
-  )
+  );
 }
 
 // post unit,
@@ -104,7 +125,10 @@ function Post({ post_img, title, glances, href_to = '#' }) {
     <>
       <Link href={href_to} underline="hover">
         <Stack spacing={2}>
-          <img src={post_img} style={{ maxWidth: 'auto', maxHeight: 'auto', width: '100%' }} />
+          <img
+            src={post_img}
+            style={{ maxWidth: 'auto', maxHeight: 'auto', width: '100%' }}
+          />
           <Box>
             <PostTitle>{title}</PostTitle>
             <PostGlances>{glances}</PostGlances>
@@ -112,7 +136,7 @@ function Post({ post_img, title, glances, href_to = '#' }) {
         </Stack>
       </Link>
     </>
-  )
+  );
 }
 
 function FeaturedPost() {
@@ -168,7 +192,7 @@ function FeaturedPost() {
         </Grid>
       </Container>
     </>
-  )
+  );
 }
 
 function PageTitle({ children }) {
@@ -176,7 +200,7 @@ function PageTitle({ children }) {
     <Typography variant="h4" sx={{ opacity: 0.9 }}>
       {children}
     </Typography>
-  )
+  );
 }
 
 function PageSubtitle({ children }) {
@@ -184,7 +208,7 @@ function PageSubtitle({ children }) {
     <Typography variant="body1" sx={{ opacity: 0.9 }}>
       {children}
     </Typography>
-  )
+  );
 }
 
 function PageHeadPart() {
@@ -193,20 +217,26 @@ function PageHeadPart() {
       <Container maxWidth="lg">
         <Stack spacing={4} justifyContent="center" alignItems="center">
           <PageTitle>Blog</PageTitle>
-          <PageSubtitle>A collection of posts I wrote about design process, technology and productivity.</PageSubtitle>
+          <PageSubtitle>
+            A collection of posts I wrote about design process, technology and
+            productivity.
+          </PageSubtitle>
         </Stack>
       </Container>
     </>
-  )
+  );
 }
 
 export default function About() {
-  let [mobile_menu_open, setMobileMenuOpen] = useState(false)
+  let [mobile_menu_open, setMobileMenuOpen] = useState(false);
 
   return (
     <Container maxWidth="xl">
       <Paper elevation={0}>
-        <FullPageMobileMenu mobile_menu_open={mobile_menu_open} setMobileMenuOpen={setMobileMenuOpen} />
+        <FullPageMobileMenu
+          mobile_menu_open={mobile_menu_open}
+          setMobileMenuOpen={setMobileMenuOpen}
+        />
         <Stack spacing={18} justifyContent="center" alignItems={'center'}>
           <NavMenu setMobileMenuOpen={setMobileMenuOpen} />
 
@@ -220,5 +250,5 @@ export default function About() {
         </Stack>
       </Paper>
     </Container>
-  )
+  );
 }
