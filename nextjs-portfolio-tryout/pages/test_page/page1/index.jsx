@@ -1,6 +1,6 @@
 import { Box, Grid, Stack } from '@mui/material';
 import BottomLink from './BottomLink';
-import NameCard from './NameCard';
+import NameCard from '../NameCard';
 import ProjectBox from './ProjectBox';
 
 export default function HelloworldPage() {
