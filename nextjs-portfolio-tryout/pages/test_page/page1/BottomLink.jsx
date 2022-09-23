@@ -9,8 +9,9 @@ import {
   Link as MuiLink,
 } from '@mui/material';
 import Link from 'next/link';
-import { useEffect, useRef, useState } from 'react';
-import { FaLink } from 'react-icons/fa';
+import { useEffect, useRef, useState, useMemo } from 'react';
+import { FaLink, FaChevronDown } from 'react-icons/fa';
+import { FiChevronsDown } from 'react-icons/fi';
 
 export function BottomLinkButton1({ text, href = '/', button_active = false }) {
   let test_ref = useRef();
@@ -64,6 +65,7 @@ export function BottomLinkButton({ text, href = '/', button_active = false }) {
             backgroundColor: active_color ? '#F39C12' : 'unset',
             padding: '10px 20px',
             cursor: 'pointer',
+            height: '2rem',
           }}
           ref={test_ref}
         >
@@ -76,9 +78,45 @@ export function BottomLinkButton({ text, href = '/', button_active = false }) {
 }
 
 export default function BottomLink() {
+  let menu_ref = useRef();
+  let [show_scroll_down_to_see_menu_button, setShowScrollDownToSeeMenuButton] =
+    useState(true);
+
+  const handleScrolling = () => {
+    if (window.scrollY > 0) {
+      setShowScrollDownToSeeMenuButton(false);
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener('scroll', handleScrolling);
+
+    return () => {
+      window.removeEventListener('scroll', handleScrolling);
+    };
+  }, []);
+
   return (
     <>
+      {show_scroll_down_to_see_menu_button ? (
+        <Box style={{ position: 'absolute', bottom: '1rem', left: '1rem' }}>
+          <Button size="small" color="secondary">
+            <Stack
+              direction="horizontal"
+              justifyContent="center"
+              alignItems="center"
+            >
+              <FiChevronsDown />
+              <Typography variant="body2">Scroll down to see menu</Typography>
+              <FiChevronsDown />
+            </Stack>
+          </Button>
+        </Box>
+      ) : (
+        <></>
+      )}
       <Grid
+        ref={menu_ref}
         container
         style={{
           backgroundColor: '#2C3E50',
