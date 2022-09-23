@@ -6,7 +6,13 @@ export default function ProjectBox({ href, image_src, text = '' }) {
   return (
     <>
       <Link href={href} passHref>
-        <Box style={{ padding: '1px', height: '100%', cursor: 'pointer' }}>
+        <Box
+          style={{
+            padding: '1px',
+            height: '100%',
+            cursor: 'pointer',
+          }}
+        >
           <Box style={{ height: '100%' }}>
             <Box
               style={{
@@ -16,6 +22,7 @@ export default function ProjectBox({ href, image_src, text = '' }) {
                 backgroundSize: 'cover',
                 backgroundPosition: 'center',
                 backgroundRepeat: 'no-repeat',
+                borderRadius: '10px',
               }}
             >
               {text ? (
@@ -34,6 +41,8 @@ export default function ProjectBox({ href, image_src, text = '' }) {
                       boxShadow: '0 8px 32px 0 rgba( 31, 38, 135, 0.37 )',
                       backdropFilter: 'blur( 4px )',
                       border: '1px solid rgba( 255, 255, 255, 0.18 )',
+
+                      borderRadius: '0px 0px 10px 10px',
                     }}
                     flexDirection="column"
                     justifyContent="flex-end"

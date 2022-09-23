@@ -94,8 +94,8 @@ export default function BottomLink() {
               button_active={true}
             />
             <BottomLinkButton text={'about'} href="/test_page/about_louis" />
-            <BottomLinkButton text={'credit'} />
-            <BottomLinkButton text={'dashboard'} />
+            <BottomLinkButton text={'credit'} href="/test_page/credit" />
+            <BottomLinkButton text={'dashboard'} href="/test_page/dashboard" />
           </Stack>
         </Grid>
         <Grid
@@ -109,9 +109,10 @@ export default function BottomLink() {
             💖 coded by louiscklaw. Built on the solder of{' '}
             <Link href="https://www.google.com" passHref>
               <MuiLink color="#ffffff" target="_blank">
-                THESE GIANTS
+                {' '}
+                THESE GIANTS{' '}
               </MuiLink>
-            </Link>{' '}
+            </Link>
             2022
           </Typography>
         </Grid>
