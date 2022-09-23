@@ -7,10 +7,7 @@ export default function HelloworldPage() {
   return (
     <>
       <Stack flexDirection={'column'}>
-        <Grid
-          container
-          style={{ width: 'calc( 100vw -0.1px )', display: 'none' }}
-        >
+        <Grid container style={{ width: 'calc( 100vw -0.1px )' }}>
           <Grid
             item
             style={{

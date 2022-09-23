@@ -39,19 +39,16 @@ export function BottomLinkButton({ text, href = '/', button_active = false }) {
   let test_ref = useRef();
   let [active_color, setActiveColor] = useState(button_active);
 
+  const handleMouseEnter = () => setActiveColor(true);
+  const handleMouseLeave = () => setActiveColor(button_active);
+
   useEffect(() => {
-    test_ref.current.addEventListener('mouseenter', event => {
-      console.log('mouse enter occured');
-      setActiveColor(true);
-    });
-    test_ref.current.addEventListener('mouseleave', event => {
-      console.log('mouse leave occured');
-      setActiveColor(button_active);
-    });
+    test_ref.current.addEventListener('mouseenter', handleMouseEnter);
+    test_ref.current.addEventListener('mouseleave', handleMouseLeave);
 
     return () => {
-      test_ref.current?.removeEventListener('mouseenter');
-      test_ref.current?.removeEventListener('mouseleave');
+      test_ref.current?.removeEventListener('mouseenter', handleMouseEnter);
+      test_ref.current?.removeEventListener('mouseleave', handleMouseLeave);
     };
   }, []);
 
@@ -82,14 +79,13 @@ export default function BottomLink() {
     <>
       <Grid
         container
-        spacing={2}
         style={{
           backgroundColor: '#2C3E50',
           color: 'white',
           padding: '0 10px',
         }}
       >
-        <Grid item xs={6} spacing={2}>
+        <Grid item xs={6}>
           <Stack direction="row" spacing={0}>
             <BottomLinkButton
               text={'project'}
