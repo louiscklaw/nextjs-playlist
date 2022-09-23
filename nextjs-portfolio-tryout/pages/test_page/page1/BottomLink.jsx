@@ -93,7 +93,7 @@ export default function BottomLink() {
               href="/home"
               button_active={true}
             />
-            <BottomLinkButton text={'about'} />
+            <BottomLinkButton text={'about'} href="/test_page/about_louis" />
             <BottomLinkButton text={'credit'} />
             <BottomLinkButton text={'dashboard'} />
           </Stack>

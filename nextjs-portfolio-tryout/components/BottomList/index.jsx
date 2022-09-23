@@ -1,10 +1,10 @@
-import { Stack, Container, Grid, useTheme, Box } from '@mui/material'
-import Typography from '@mui/material/Typography'
-import React, { useContext } from 'react'
+import { Stack, Container, Grid, useTheme, Box } from '@mui/material';
+import Typography from '@mui/material/Typography';
+import React, { useContext } from 'react';
 
-import { ViewPortMeasureContext } from '../../contexts/ViewPortMeasureContext'
+import { ViewPortMeasureContext } from '../../contexts/ViewPortMeasureContext';
 // import Link from '../../src/Link'
-import Link from '../../src/Link'
+import Link from '../../src/Link';
 
 function DesktopLink({ link_text, link_href }) {
   return (
@@ -13,12 +13,12 @@ function DesktopLink({ link_text, link_href }) {
         {link_text}
       </Typography>
     </Link>
-  )
+  );
 }
 
 export default function BottomList() {
-  const { palette } = useTheme()
-  const { md_up } = React.useContext(ViewPortMeasureContext)
+  const { palette } = useTheme();
+  const { md_up } = React.useContext(ViewPortMeasureContext);
   return (
     <>
       <Stack justifyContent="center" alignItems="center" spacing={5}>
@@ -66,11 +66,16 @@ export default function BottomList() {
           </Grid>
         )}
         <Stack p={1} sx={{ width: '100%' }}>
-          <Typography variant="caption" color={palette.primary.main} align="center" sx={{ opacity: 0.9 }}>
+          <Typography
+            variant="caption"
+            color={palette.primary.main}
+            align="center"
+            sx={{ opacity: 0.9 }}
+          >
             CODE BY LOUIS LAW © 2018 - 2022
           </Typography>
         </Stack>
       </Stack>
     </>
-  )
+  );
 }
