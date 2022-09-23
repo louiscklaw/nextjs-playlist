@@ -5,7 +5,7 @@ import { use100vh } from 'react-div-100vh';
 import { FaArrowLeft } from 'react-icons/fa';
 import project_img from './project_img.avif';
 
-export default function Project1() {
+export default function Project2() {
   let height_100vh = use100vh();
 
   return (
