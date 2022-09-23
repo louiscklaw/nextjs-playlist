@@ -6,6 +6,7 @@ import {
   Typography,
   List,
   ListItem,
+  Link as MuiLink,
 } from '@mui/material';
 import Link from 'next/link';
 import { useEffect, useRef, useState } from 'react';
@@ -97,8 +98,22 @@ export default function BottomLink() {
             <BottomLinkButton text={'dashboard'} />
           </Stack>
         </Grid>
-        <Grid item xs={6} container justifyContent="flex-end">
-          <Typography variant={'body1'}>coded by louiscklaw</Typography>
+        <Grid
+          item
+          xs={6}
+          container
+          justifyContent="flex-end"
+          alignItems="center"
+        >
+          <Typography variant={'body1'}>
+            💖 coded by louiscklaw. Built on the solder of{' '}
+            <Link href="https://www.google.com" passHref>
+              <MuiLink color="#ffffff" target="_blank">
+                THESE GIANTS
+              </MuiLink>
+            </Link>{' '}
+            2022
+          </Typography>
         </Grid>
       </Grid>
     </>
