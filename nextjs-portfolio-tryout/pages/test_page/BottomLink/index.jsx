@@ -13,30 +13,6 @@ import { useEffect, useRef, useState, useMemo } from 'react';
 import { FaLink, FaChevronDown } from 'react-icons/fa';
 import { FiAlertCircle } from 'react-icons/fi';
 
-export function BottomLinkButton1({ text, href = '/', button_active = false }) {
-  let test_ref = useRef();
-
-  return (
-    <>
-      <Link href={href}>
-        <Stack
-          direction="row"
-          alignItems="center"
-          spacing={1}
-          style={{
-            backgroundColor: button_active ? '#F39C12' : 'unset',
-            padding: '10px 20px',
-          }}
-          ref={test_ref}
-        >
-          <FaLink />
-          <Typography variant={'body1'}>{text}</Typography>
-        </Stack>
-      </Link>
-    </>
-  );
-}
-
 export function BottomLinkButton({ text, href = '/', button_active = false }) {
   let test_ref = useRef();
   let [active_color, setActiveColor] = useState(button_active);

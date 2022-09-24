@@ -2,6 +2,7 @@ import { use100vh } from 'react-div-100vh';
 import { Typography, Grid, Box, Button, Stack } from '@mui/material';
 import Link from 'next/link';
 import { FaArrowLeft } from 'react-icons/fa';
+import BottomLink from '../BottomLink';
 
 function BackButton() {
   return (
@@ -79,6 +80,7 @@ export default function About() {
           </Grid>
         </Grid>
       </Grid>
+      <BottomLink />
     </>
   );
 }

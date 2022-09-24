@@ -1,5 +1,5 @@
 import { Box, Grid, Stack } from '@mui/material';
-import BottomLink from './BottomLink';
+import BottomLink from '../BottomLink';
 import NameCard from '../NameCard';
 import ProjectBox from './ProjectBox';
 import test_project_background_avif from './test_project_background.avif';
