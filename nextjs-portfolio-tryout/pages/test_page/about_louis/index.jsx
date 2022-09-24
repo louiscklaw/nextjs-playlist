@@ -148,20 +148,37 @@ export default function About() {
                   <Typography variant="h5">Education Background:</Typography>
 
                   <List>
-                    <ListItem disablePadding dense>
+                    <ListItem disablePadding>
                       <ListItemButton
                         component="a"
                         href="https://www.ee.cityu.edu.hk/"
                       >
-                        <ListItemText primary="City University of Hong Kong (Electronic engineering)" />
+                        <img src="https://template.cityu.edu.hk/template/logo/ee/ee_logo_eng_cmyk.svg" />
+                        <Typography variant="h6">
+                          City University of Hong Kong (Electronic engineering)
+                        </Typography>
                       </ListItemButton>
                     </ListItem>
+
                     <ListItem disablePadding dense>
                       <ListItemButton
                         component="a"
                         href="https://www.ive.edu.hk/ivesite/html/tc/campus/ty_overview.html"
                       >
-                        <ListItemText primary="Higher Diploma (Electrical Engineering)" />
+                        <Typography variant="h6">
+                          Higher Diploma (Electrical Engineering)
+                        </Typography>
+                      </ListItemButton>
+                    </ListItem>
+
+                    <ListItem disablePadding dense>
+                      <ListItemButton
+                        component="a"
+                        href="https://www.ive.edu.hk"
+                      >
+                        <Typography variant="h6">
+                          Diploma (Electronic Engineering)
+                        </Typography>
                       </ListItemButton>
                     </ListItem>
                   </List>
