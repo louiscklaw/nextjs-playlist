@@ -11,6 +11,15 @@ import TimelineConnector from '@mui/lab/TimelineConnector';
 import TimelineContent from '@mui/lab/TimelineContent';
 import TimelineDot from '@mui/lab/TimelineDot';
 
+import List from '@mui/material/List';
+import ListItem from '@mui/material/ListItem';
+import ListItemButton from '@mui/material/ListItemButton';
+import ListItemIcon from '@mui/material/ListItemIcon';
+import ListItemText from '@mui/material/ListItemText';
+import Divider from '@mui/material/Divider';
+import InboxIcon from '@mui/icons-material/Inbox';
+import DraftsIcon from '@mui/icons-material/Drafts';
+
 function BackButton() {
   return (
     <Link href="/test_page/page1" passHref>
@@ -136,10 +145,26 @@ export default function About() {
                 </Timeline>
 
                 <Stack spacing={1}>
-                  <Typography variant="h5">EDUCATION BACKGROUND:</Typography>
-                  <Typography variant="body1">
-                    City University of Hong Kong (Electronic engineering)
-                  </Typography>
+                  <Typography variant="h5">Education Background:</Typography>
+
+                  <List>
+                    <ListItem disablePadding dense>
+                      <ListItemButton
+                        component="a"
+                        href="https://www.ee.cityu.edu.hk/"
+                      >
+                        <ListItemText primary="City University of Hong Kong (Electronic engineering)" />
+                      </ListItemButton>
+                    </ListItem>
+                    <ListItem disablePadding dense>
+                      <ListItemButton
+                        component="a"
+                        href="https://www.ive.edu.hk/ivesite/html/tc/campus/ty_overview.html"
+                      >
+                        <ListItemText primary="Higher Diploma (Electrical Engineering)" />
+                      </ListItemButton>
+                    </ListItem>
+                  </List>
                 </Stack>
               </Stack>
             </Box>
