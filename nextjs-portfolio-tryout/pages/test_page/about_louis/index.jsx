@@ -90,15 +90,54 @@ export default function About() {
 
                 <Stack spacing={2}>
                   <Typography variant="h5">OTHER SKILLS:</Typography>
-                  <Typography variant="body1">
-                    Linux management Web frontend
-                    (bulma/materialize.css/next/gatsby) SQL (MySQL/MariaDB),
-                    Realtime DB (Firebase) Desktop applications (kivy)
-                    Serverless (Firebase Cloud Functions), PaaS (Heroku) Docker
-                    with docker-compose, nginx (Load balancing + Failover)
-                    OCR/captcha study(tesseract) KVM (Performance optimization,
-                    GPU Passthrough by OVMF)
-                  </Typography>
+                  <Box>
+                    <List>
+                      <ListItem disablePadding dense>
+                        <Typography variant="body1">
+                          Linux management Web frontend
+                          (bulma/materialize.css/next/gatsby)
+                        </Typography>
+                      </ListItem>
+
+                      <ListItem disablePadding dense>
+                        <Typography variant="body1">
+                          SQL (MySQL/MariaDB), Realtime DB (Firebase) Desktop
+                        </Typography>
+                      </ListItem>
+
+                      <ListItem disablePadding dense>
+                        <Typography variant="body1">
+                          study(tesseract) KVM (Performance optimization GPU
+                          Passthrough by OVMF)
+                        </Typography>
+                      </ListItem>
+
+                      <ListItem disablePadding dense>
+                        <Typography variant="body1">
+                          study(tesseract) KVM (Performance optimization
+                        </Typography>
+                      </ListItem>
+
+                      <ListItem disablePadding dense>
+                        <Typography variant="body1">
+                          applications (kivy) Serverless (Firebase Cloud
+                          Functions)
+                        </Typography>
+                      </ListItem>
+
+                      <ListItem disablePadding dense>
+                        <Typography variant="body1">
+                          nginx (Load balancing + Failover) OCR/captcha
+                        </Typography>
+                      </ListItem>
+
+                      <ListItem disablePadding dense>
+                        <Typography variant="body1">
+                          PaaS (Heroku) Docker with docker-compose
+                        </Typography>
+                      </ListItem>
+                    </List>
+                  </Box>
                 </Stack>
               </Stack>
             </Box>
