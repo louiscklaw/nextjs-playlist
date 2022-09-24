@@ -72,72 +72,109 @@ export default function About() {
           <Grid item xs={6}>
             <Box>
               <Stack spacing={5}>
-                <Typography variant="h5">Something about me</Typography>
-                <Stack spacing={2}>
-                  <Typography variant="h5">Language:</Typography>
-                  <Typography variant="body1">
-                    Cantonese, English, Mandarin
-                  </Typography>
-                </Stack>
-                <Stack spacing={2}>
-                  <Typography variant="h5">THINGS I DO WHEN I FREE:</Typography>
-                  <Typography variant="body1">
-                    Electronic stuff software (arduino, raspberry pi), hardware,
-                    Do some PCB layout Some making/modeling, Web page scraping
-                    github searching
-                  </Typography>
-                </Stack>
+                <Typography variant="h3">Something about me</Typography>
 
-                <Stack spacing={2}>
-                  <Typography variant="h5">OTHER SKILLS:</Typography>
-                  <Box>
-                    <List>
-                      <ListItem disablePadding dense>
-                        <Typography variant="body1">
-                          Linux management Web frontend
-                          (bulma/materialize.css/next/gatsby)
-                        </Typography>
-                      </ListItem>
+                <Stack spacing={5}>
+                  <Stack spacing={2}>
+                    <Typography variant="h5">Language:</Typography>
+                    <Box>
+                      <List>
+                        <ListItem disablePadding dense>
+                          <Typography variant="body1">Cantonese</Typography>
+                        </ListItem>
 
-                      <ListItem disablePadding dense>
-                        <Typography variant="body1">
-                          SQL (MySQL/MariaDB), Realtime DB (Firebase) Desktop
-                        </Typography>
-                      </ListItem>
+                        <ListItem disablePadding dense>
+                          <Typography variant="body1">English</Typography>
+                        </ListItem>
 
-                      <ListItem disablePadding dense>
-                        <Typography variant="body1">
-                          study(tesseract) KVM (Performance optimization GPU
-                          Passthrough by OVMF)
-                        </Typography>
-                      </ListItem>
+                        <ListItem disablePadding dense>
+                          <Typography variant="body1">Mandarin</Typography>
+                        </ListItem>
+                      </List>
+                    </Box>
+                  </Stack>
+                  <Stack spacing={2}>
+                    <Typography variant="h5">
+                      THINGS I DO WHEN I FREE:
+                    </Typography>
+                    <Box>
+                      <List>
+                        <ListItem disablePadding dense>
+                          <Typography variant="body1">
+                            Electronic stuff software (arduino, raspberry pi)
+                          </Typography>
+                        </ListItem>
 
-                      <ListItem disablePadding dense>
-                        <Typography variant="body1">
-                          study(tesseract) KVM (Performance optimization
-                        </Typography>
-                      </ListItem>
+                        <ListItem disablePadding dense>
+                          <Typography variant="body1">hardware</Typography>
+                        </ListItem>
 
-                      <ListItem disablePadding dense>
-                        <Typography variant="body1">
-                          applications (kivy) Serverless (Firebase Cloud
-                          Functions)
-                        </Typography>
-                      </ListItem>
+                        <ListItem disablePadding dense>
+                          <Typography variant="body1">
+                            Do some PCB layout Some making/modeling
+                          </Typography>
+                        </ListItem>
 
-                      <ListItem disablePadding dense>
-                        <Typography variant="body1">
-                          nginx (Load balancing + Failover) OCR/captcha
-                        </Typography>
-                      </ListItem>
+                        <ListItem disablePadding dense>
+                          <Typography variant="body1">
+                            Web page scraping github searching
+                          </Typography>
+                        </ListItem>
+                      </List>
+                    </Box>
+                  </Stack>
 
-                      <ListItem disablePadding dense>
-                        <Typography variant="body1">
-                          PaaS (Heroku) Docker with docker-compose
-                        </Typography>
-                      </ListItem>
-                    </List>
-                  </Box>
+                  <Stack spacing={2}>
+                    <Typography variant="h5">OTHER SKILLS:</Typography>
+                    <Box>
+                      <List>
+                        <ListItem disablePadding dense>
+                          <Typography variant="body1">
+                            Linux management Web frontend
+                            (bulma/materialize.css/next/gatsby)
+                          </Typography>
+                        </ListItem>
+
+                        <ListItem disablePadding dense>
+                          <Typography variant="body1">
+                            SQL (MySQL/MariaDB), Realtime DB (Firebase) Desktop
+                          </Typography>
+                        </ListItem>
+
+                        <ListItem disablePadding dense>
+                          <Typography variant="body1">
+                            study(tesseract) KVM (Performance optimization GPU
+                            Passthrough by OVMF)
+                          </Typography>
+                        </ListItem>
+
+                        <ListItem disablePadding dense>
+                          <Typography variant="body1">
+                            study(tesseract) KVM (Performance optimization
+                          </Typography>
+                        </ListItem>
+
+                        <ListItem disablePadding dense>
+                          <Typography variant="body1">
+                            applications (kivy) Serverless (Firebase Cloud
+                            Functions)
+                          </Typography>
+                        </ListItem>
+
+                        <ListItem disablePadding dense>
+                          <Typography variant="body1">
+                            nginx (Load balancing + Failover) OCR/captcha
+                          </Typography>
+                        </ListItem>
+
+                        <ListItem disablePadding dense>
+                          <Typography variant="body1">
+                            PaaS (Heroku) Docker with docker-compose
+                          </Typography>
+                        </ListItem>
+                      </List>
+                    </Box>
+                  </Stack>
                 </Stack>
               </Stack>
             </Box>
