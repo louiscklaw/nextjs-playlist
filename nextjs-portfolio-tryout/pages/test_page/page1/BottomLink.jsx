@@ -11,7 +11,7 @@ import {
 import Link from 'next/link';
 import { useEffect, useRef, useState, useMemo } from 'react';
 import { FaLink, FaChevronDown } from 'react-icons/fa';
-import { FiChevronsDown } from 'react-icons/fi';
+import { FiAlertCircle } from 'react-icons/fi';
 
 export function BottomLinkButton1({ text, href = '/', button_active = false }) {
   let test_ref = useRef();
@@ -99,16 +99,17 @@ export default function BottomLink() {
   return (
     <>
       {show_scroll_down_to_see_menu_button ? (
-        <Box style={{ position: 'absolute', bottom: '1rem', left: '1rem' }}>
-          <Button size="small" color="secondary">
+        <Box style={{ position: 'absolute', bottom: '1rem', left: '2rem' }}>
+          <Button size="small" color="secondary" variant="contained">
             <Stack
-              direction="horizontal"
+              direction="row"
               justifyContent="center"
               alignItems="center"
+              spacing={2}
             >
-              <FiChevronsDown />
+              <FiAlertCircle />
               <Typography variant="body2">Scroll down to see menu</Typography>
-              <FiChevronsDown />
+              <FiAlertCircle />
             </Stack>
           </Button>
         </Box>
