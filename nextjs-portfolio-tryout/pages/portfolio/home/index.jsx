@@ -28,7 +28,7 @@ export default function HelloworldPage() {
             }}
           >
             <ProjectBox
-              href={'/test_page/project1'}
+              href={'project1'}
               image_src={test_project_background_avif.src}
               text={'project1'}
             />
@@ -38,7 +38,7 @@ export default function HelloworldPage() {
             style={{ height: 'calc( 100vh / 4 )', width: 'calc( 100% / 7 )' }}
           >
             <ProjectBox
-              href={'/test_page/project2'}
+              href={'project2'}
               image_src={test_project_background_avif.src}
               text={'project2'}
             />
@@ -48,7 +48,7 @@ export default function HelloworldPage() {
             style={{ height: 'calc( 100vh / 4 )', width: 'calc( 100% / 7 )' }}
           >
             <ProjectBox
-              href={'/test_page/project3'}
+              href={'project3'}
               image_src={test_project_background_avif.src}
               text={'project3'}
             />
@@ -58,7 +58,7 @@ export default function HelloworldPage() {
             style={{ height: 'calc( 100vh / 4 )', width: 'calc( 100% / 7 )' }}
           >
             <ProjectBox
-              href={'/test_page/project4'}
+              href={'project4'}
               image_src={test_project_background_avif.src}
               text={'project4'}
             />
@@ -67,152 +67,152 @@ export default function HelloworldPage() {
             item
             style={{ height: 'calc( 100vh / 4 )', width: 'calc( 100% / 7 )' }}
           >
-            <ProjectBox href={'/test_page/project1'} />
+            <ProjectBox href={'project1'} />
           </Grid>
           <Grid
             item
             style={{ height: 'calc( 100vh / 4 )', width: 'calc( 100% / 7 )' }}
           >
-            <ProjectBox href={'/test_page/project1'} />
+            <ProjectBox href={'project1'} />
           </Grid>
           <Grid
             item
             style={{ height: 'calc( 100vh / 4 )', width: 'calc( 100% / 7 )' }}
           >
-            <ProjectBox href={'/test_page/project1'} />
-          </Grid>
-
-          <Grid
-            item
-            style={{ height: 'calc( 100vh / 4 )', width: 'calc( 100% / 7 )' }}
-          >
-            <ProjectBox href={'/test_page/project1'} />
+            <ProjectBox href={'project1'} />
           </Grid>
 
           <Grid
             item
             style={{ height: 'calc( 100vh / 4 )', width: 'calc( 100% / 7 )' }}
           >
-            <ProjectBox href={'/test_page/project1'} />
+            <ProjectBox href={'project1'} />
           </Grid>
 
           <Grid
             item
             style={{ height: 'calc( 100vh / 4 )', width: 'calc( 100% / 7 )' }}
           >
-            <ProjectBox href={'/test_page/project1'} />
+            <ProjectBox href={'project1'} />
           </Grid>
 
           <Grid
             item
             style={{ height: 'calc( 100vh / 4 )', width: 'calc( 100% / 7 )' }}
           >
-            <ProjectBox href={'/test_page/project1'} />
+            <ProjectBox href={'project1'} />
           </Grid>
 
           <Grid
             item
             style={{ height: 'calc( 100vh / 4 )', width: 'calc( 100% / 7 )' }}
           >
-            <ProjectBox href={'/test_page/project1'} />
+            <ProjectBox href={'project1'} />
           </Grid>
 
           <Grid
             item
             style={{ height: 'calc( 100vh / 4 )', width: 'calc( 100% / 7 )' }}
           >
-            <ProjectBox href={'/test_page/project1'} />
+            <ProjectBox href={'project1'} />
           </Grid>
 
           <Grid
             item
             style={{ height: 'calc( 100vh / 4 )', width: 'calc( 100% / 7 )' }}
           >
-            <ProjectBox href={'/test_page/project1'} />
+            <ProjectBox href={'project1'} />
           </Grid>
 
           <Grid
             item
             style={{ height: 'calc( 100vh / 4 )', width: 'calc( 100% / 7 )' }}
           >
-            <ProjectBox href={'/test_page/project1'} />
+            <ProjectBox href={'project1'} />
           </Grid>
 
           <Grid
             item
             style={{ height: 'calc( 100vh / 4 )', width: 'calc( 100% / 7 )' }}
           >
-            <ProjectBox href={'/test_page/project1'} />
+            <ProjectBox href={'project1'} />
           </Grid>
 
           <Grid
             item
             style={{ height: 'calc( 100vh / 4 )', width: 'calc( 100% / 7 )' }}
           >
-            <ProjectBox href={'/test_page/project1'} />
+            <ProjectBox href={'project1'} />
           </Grid>
 
           <Grid
             item
             style={{ height: 'calc( 100vh / 4 )', width: 'calc( 100% / 7 )' }}
           >
-            <ProjectBox href={'/test_page/project1'} />
+            <ProjectBox href={'project1'} />
           </Grid>
 
           <Grid
             item
             style={{ height: 'calc( 100vh / 4 )', width: 'calc( 100% / 7 )' }}
           >
-            <ProjectBox href={'/test_page/project1'} />
+            <ProjectBox href={'project1'} />
           </Grid>
 
           <Grid
             item
             style={{ height: 'calc( 100vh / 4 )', width: 'calc( 100% / 7 )' }}
           >
-            <ProjectBox href={'/test_page/project1'} />
+            <ProjectBox href={'project1'} />
           </Grid>
 
           <Grid
             item
             style={{ height: 'calc( 100vh / 4 )', width: 'calc( 100% / 7 )' }}
           >
-            <ProjectBox href={'/test_page/project1'} />
+            <ProjectBox href={'project1'} />
           </Grid>
 
           <Grid
             item
             style={{ height: 'calc( 100vh / 4 )', width: 'calc( 100% / 7 )' }}
           >
-            <ProjectBox href={'/test_page/project1'} />
+            <ProjectBox href={'project1'} />
           </Grid>
 
           <Grid
             item
             style={{ height: 'calc( 100vh / 4 )', width: 'calc( 100% / 7 )' }}
           >
-            <ProjectBox href={'/test_page/project1'} />
+            <ProjectBox href={'project1'} />
           </Grid>
 
           <Grid
             item
             style={{ height: 'calc( 100vh / 4 )', width: 'calc( 100% / 7 )' }}
           >
-            <ProjectBox href={'/test_page/project1'} />
+            <ProjectBox href={'project1'} />
           </Grid>
 
           <Grid
             item
             style={{ height: 'calc( 100vh / 4 )', width: 'calc( 100% / 7 )' }}
           >
-            <ProjectBox href={'/test_page/project1'} />
+            <ProjectBox href={'project1'} />
           </Grid>
 
           <Grid
             item
             style={{ height: 'calc( 100vh / 4 )', width: 'calc( 100% / 7 )' }}
           >
-            <ProjectBox href={'/test_page/project1'} />
+            <ProjectBox href={'project1'} />
+          </Grid>
+
+          <Grid
+            item
+            style={{ height: 'calc( 100vh / 4 )', width: 'calc( 100% / 7 )' }}
+          >
+            <ProjectBox href={'project1'} />
           </Grid>
         </Grid>
         <BottomLink />
