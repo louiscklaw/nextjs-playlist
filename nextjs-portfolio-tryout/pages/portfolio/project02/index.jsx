@@ -3,7 +3,7 @@ import Link from 'next/link';
 import NameCard from '../NameCard';
 import { use100vh } from 'react-div-100vh';
 import { FaArrowLeft } from 'react-icons/fa';
-import project_img from './project_img.avif';
+import project_img from './appiumbehavenotes_thumbnail.png';
 
 export default function Project2() {
   let height_100vh = use100vh();
