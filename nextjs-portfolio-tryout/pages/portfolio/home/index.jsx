@@ -3,6 +3,7 @@ import BottomLink from '../BottomLink';
 import NameCard from '../NameCard';
 import ProjectBox from './ProjectBox';
 import test_project_background_avif from './test_project_background.avif';
+import tradingview_screenshot_png from '../project1/tradingview-screenshot.png';
 
 export default function HelloworldPage() {
   return (
@@ -29,7 +30,7 @@ export default function HelloworldPage() {
           >
             <ProjectBox
               href={'project1'}
-              image_src={test_project_background_avif.src}
+              image_src={tradingview_screenshot_png.src}
               text={'project1'}
             />
           </Grid>

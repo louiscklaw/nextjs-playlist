@@ -3,7 +3,7 @@ import Link from 'next/link';
 import NameCard from '../NameCard';
 import { use100vh } from 'react-div-100vh';
 import { FaArrowLeft } from 'react-icons/fa';
-import project_img from './project_img.avif';
+import project_img from './tradingview-screenshot.png';
 
 export default function Project1() {
   let height_100vh = use100vh();
@@ -27,7 +27,7 @@ export default function Project1() {
         >
           <Grid item>louislaw namecard</Grid>
           <Grid item>
-            <Link href="/test_page/page1" passHref>
+            <Link href="/portfolio/home" passHref>
               <Button
                 variant="contained"
                 style={{ width: '100px', height: '100px' }}
