@@ -1,24 +1,19 @@
-import { use100vh } from 'react-div-100vh';
-import { Typography, Grid, Box, Button, Stack } from '@mui/material';
+import { Box, Button, Grid, Stack, Typography } from '@mui/material';
 import Link from 'next/link';
+import { use100vh } from 'react-div-100vh';
 import { FaArrowLeft } from 'react-icons/fa';
 import BottomLink from '../BottomLink';
 
 import Timeline from '@mui/lab/Timeline';
-import TimelineItem, { timelineItemClasses } from '@mui/lab/TimelineItem';
-import TimelineSeparator from '@mui/lab/TimelineSeparator';
 import TimelineConnector from '@mui/lab/TimelineConnector';
 import TimelineContent from '@mui/lab/TimelineContent';
 import TimelineDot from '@mui/lab/TimelineDot';
+import TimelineItem, { timelineItemClasses } from '@mui/lab/TimelineItem';
+import TimelineSeparator from '@mui/lab/TimelineSeparator';
 
 import List from '@mui/material/List';
 import ListItem from '@mui/material/ListItem';
 import ListItemButton from '@mui/material/ListItemButton';
-import ListItemIcon from '@mui/material/ListItemIcon';
-import ListItemText from '@mui/material/ListItemText';
-import Divider from '@mui/material/Divider';
-import InboxIcon from '@mui/icons-material/Inbox';
-import DraftsIcon from '@mui/icons-material/Drafts';
 
 function BackButton() {
   return (
