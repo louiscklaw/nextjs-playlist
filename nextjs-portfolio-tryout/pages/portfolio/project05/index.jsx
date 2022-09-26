@@ -3,7 +3,7 @@ import Link from 'next/link';
 import NameCard from '../NameCard';
 import { use100vh } from 'react-div-100vh';
 import { FaArrowLeft } from 'react-icons/fa';
-import project_img from './ccbdbbdd9eb76be469a343462f7729be.jpg';
+import project_img from './vorontryout_thumbnail.png';
 
 export default function Project2() {
   let height_100vh = use100vh();
