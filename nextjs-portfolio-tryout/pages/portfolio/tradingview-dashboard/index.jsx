@@ -4,6 +4,7 @@ import NameCard from '../NameCard';
 import { use100vh } from 'react-div-100vh';
 import { FaArrowLeft } from 'react-icons/fa';
 import project_img from './tradingview-screenshot.png';
+import GithubLinks from '../components/GithubLinks';
 
 export default function Project1() {
   let height_100vh = use100vh();
@@ -56,12 +57,7 @@ export default function Project1() {
           </Box>
         </Grid>
         <Grid item xs={5} container justifyContent="center" alignItems="center">
-          <Box
-            style={{
-              padding: '10px',
-              height: '80%',
-            }}
-          >
+          <Box style={{ padding: '10px', height: '80%' }}>
             <Stack
               spacing={5}
               style={{
@@ -76,24 +72,28 @@ export default function Project1() {
               </Box>
               <Stack spacing={3}>
                 <Stack spacing={1}>
-                  <Typography variant={'h5'}>Purpose:</Typography>
+                  <Typography variant={'h5'}>Purpose/Description:</Typography>
                   <Typography variant={'body1'}>
                     A simple page to monitor stock, while data provided by
-                    trading view
+                    trading view.
                   </Typography>
                 </Stack>
                 <Stack spacing={1}>
-                  <Typography variant={'h5'}>Purpose:</Typography>
+                  <Typography variant={'h5'}>Demo:</Typography>
                   <Typography variant={'body1'}>
-                    A simple page to monitor stock, while data provided by
-                    trading view
+                    https://louiscklaw.github.io/tradingview-tile-tryout
                   </Typography>
                 </Stack>
                 <Stack spacing={1}>
-                  <Typography variant={'h5'}>Purpose:</Typography>
+                  <Typography variant={'h5'}>
+                    References / Repositories:
+                  </Typography>
                   <Typography variant={'body1'}>
-                    A simple page to monitor stock, while data provided by
-                    trading view
+                    <GithubLinks
+                      href={
+                        'https://www.github.com/louiscklaw/tradingview-tile-tryout'
+                      }
+                    />
                   </Typography>
                 </Stack>
               </Stack>
