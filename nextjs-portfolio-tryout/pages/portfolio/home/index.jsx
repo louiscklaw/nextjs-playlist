@@ -5,7 +5,7 @@ import ProjectBox from './ProjectBox';
 import test_project_background_avif from './test_project_background.avif';
 
 // project thumbnails
-import tradingview_screenshot_png from '../project01/tradingview-screenshot.png';
+import tradingview_screenshot_png from '../tradingview-dashboard/tradingview-screenshot.png';
 import appiumbehavenotes_thumbnail_png from '../project02/appiumbehavenotes_thumbnail.png';
 import allwinner_v3s_tryout_jpg from '../project03/ccbdbbdd9eb76be469a343462f7729be.jpg';
 import youtubesplitviewtryout_thumbnail_png from '../project04/youtubesplitviewtryout_thumbnail.png';
@@ -56,9 +56,9 @@ export default function HelloworldPage() {
             }}
           >
             <ProjectBox
-              href={'project01'}
+              href={'tradingview-dashboard'}
               image_src={tradingview_screenshot_png.src}
-              text={'project01'}
+              text={'tradingview dashboard'}
             />
           </Grid>
           <Grid
