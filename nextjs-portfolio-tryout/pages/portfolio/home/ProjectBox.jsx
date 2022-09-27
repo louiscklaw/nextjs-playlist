@@ -3,16 +3,38 @@ import Link from 'next/link';
 import test_project_background_avif from './test_project_background.avif';
 
 export default function ProjectBox({ href, image_src, text = '' }) {
+  if (image_src == '')
+    return (
+      <>
+        <Box style={{ padding: '1px', height: '100%', opacity: '40%' }}>
+          <Box
+            style={{
+              backgroundColor: '#2C3E50',
+              color: 'white',
+              height: '100%',
+
+              borderRadius: '10px',
+            }}
+          >
+            <Stack
+              direction="column"
+              justifyContent="center"
+              alignItems="center"
+              style={{ height: '100%' }}
+            >
+              <Typography variant="body1">
+                An amazing project born here
+              </Typography>
+            </Stack>
+          </Box>
+        </Box>
+      </>
+    );
+
   return (
     <>
       <Link href={href} passHref>
-        <Box
-          style={{
-            padding: '1px',
-            height: '100%',
-            cursor: 'pointer',
-          }}
-        >
+        <Box style={{ padding: '1px', height: '100%', cursor: 'pointer' }}>
           <Box style={{ height: '100%' }}>
             <Box
               style={{

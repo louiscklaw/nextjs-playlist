@@ -108,7 +108,7 @@ export default function HelloworldPage() {
             <ProjectBox
               href={'project06'}
               image_src={t79d8c82649563e29b20c231b6bfd1efd_svg.src}
-              text={'project06'}
+              text={'traefik docker'}
             />
           </Grid>
           <Grid
@@ -215,9 +215,9 @@ export default function HelloworldPage() {
             style={{ height: 'calc( 100vh / 4 )', width: 'calc( 100% / 7 )' }}
           >
             <ProjectBox
-              href={'project16'}
-              image_src={youtubesplitviewtryout_thumbnail_png.src}
-              text={'project16'}
+              href={'appium_projects'}
+              image_src={''}
+              text={'appium, selenium'}
             />
           </Grid>
 
@@ -227,8 +227,8 @@ export default function HelloworldPage() {
           >
             <ProjectBox
               href={'project17'}
-              image_src={youtubesplitviewtryout_thumbnail_png.src}
-              text={'project17'}
+              image_src={''}
+              text={'nighthawk cypress puppeteer playwright'}
             />
           </Grid>
 
@@ -238,8 +238,8 @@ export default function HelloworldPage() {
           >
             <ProjectBox
               href={'project18'}
-              image_src={youtubesplitviewtryout_thumbnail_png.src}
-              text={'project18'}
+              image_src={''}
+              text={'react nextjs expo'}
             />
           </Grid>
 
@@ -249,8 +249,8 @@ export default function HelloworldPage() {
           >
             <ProjectBox
               href={'project19'}
-              image_src={youtubesplitviewtryout_thumbnail_png.src}
-              text={'project19'}
+              image_src={''}
+              text={'lynked.cp.jp'}
             />
           </Grid>
 
@@ -258,77 +258,49 @@ export default function HelloworldPage() {
             item
             style={{ height: 'calc( 100vh / 4 )', width: 'calc( 100% / 7 )' }}
           >
-            <ProjectBox
-              href={'project20'}
-              image_src={youtubesplitviewtryout_thumbnail_png.src}
-              text={'project20'}
-            />
+            <ProjectBox href={'project20'} image_src={''} text={'fusion360'} />
           </Grid>
 
           <Grid
             item
             style={{ height: 'calc( 100vh / 4 )', width: 'calc( 100% / 7 )' }}
           >
-            <ProjectBox
-              href={'project21'}
-              image_src={youtubesplitviewtryout_thumbnail_png.src}
-              text={'project21'}
-            />
+            <ProjectBox href={'project21'} image_src={''} text={''} />
           </Grid>
 
           <Grid
             item
             style={{ height: 'calc( 100vh / 4 )', width: 'calc( 100% / 7 )' }}
           >
-            <ProjectBox
-              href={'project22'}
-              image_src={youtubesplitviewtryout_thumbnail_png.src}
-              text={'project22'}
-            />
+            <ProjectBox href={'project22'} image_src={''} text={'project22'} />
           </Grid>
 
           <Grid
             item
             style={{ height: 'calc( 100vh / 4 )', width: 'calc( 100% / 7 )' }}
           >
-            <ProjectBox
-              href={'project23'}
-              image_src={youtubesplitviewtryout_thumbnail_png.src}
-              text={'project23'}
-            />
+            <ProjectBox href={'project23'} image_src={''} text={'project23'} />
           </Grid>
 
           <Grid
             item
             style={{ height: 'calc( 100vh / 4 )', width: 'calc( 100% / 7 )' }}
           >
-            <ProjectBox
-              href={'project24'}
-              image_src={youtubesplitviewtryout_thumbnail_png.src}
-              text={'project24'}
-            />
+            <ProjectBox href={'project24'} image_src={''} text={'project24'} />
           </Grid>
 
           <Grid
             item
             style={{ height: 'calc( 100vh / 4 )', width: 'calc( 100% / 7 )' }}
           >
-            <ProjectBox
-              href={'project25'}
-              image_src={youtubesplitviewtryout_thumbnail_png.src}
-              text={'project25'}
-            />
+            <ProjectBox href={'project25'} image_src={''} text={'project25'} />
           </Grid>
 
           <Grid
             item
             style={{ height: 'calc( 100vh / 4 )', width: 'calc( 100% / 7 )' }}
           >
-            <ProjectBox
-              href={'project26'}
-              image_src={youtubesplitviewtryout_thumbnail_png.src}
-              text={'project26'}
-            />
+            <ProjectBox href={'project26'} image_src={''} text={'project26'} />
           </Grid>
         </Grid>
         <BottomLink />
