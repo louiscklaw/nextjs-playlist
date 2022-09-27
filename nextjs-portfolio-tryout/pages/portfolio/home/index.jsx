@@ -12,25 +12,25 @@ import youtubesplitviewtryout_thumbnail_png from '../project04/youtubesplitviewt
 import vorontryout_thumbnail_png from '../project05/vorontryout_thumbnail.png';
 import t79d8c82649563e29b20c231b6bfd1efd_svg from '../project06/79d8c82649563e29b20c231b6bfd1efd.svg';
 import tappy_thumbnail_png from '../project07/tappy_thumbnail.png';
-// import tappy_thumbnail_png from '../project08/tappy_thumbnail.png';
-// import tappy_thumbnail_png from '../project09/tappy_thumbnail.png';
-// import tappy_thumbnail_png from '../project10/tappy_thumbnail.png';
-// import tappy_thumbnail_png from '../project11/tappy_thumbnail.png';
-// import tappy_thumbnail_png from '../project12/tappy_thumbnail.png';
-// import tappy_thumbnail_png from '../project13/tappy_thumbnail.png';
-// import tappy_thumbnail_png from '../project14/tappy_thumbnail.png';
-// import tappy_thumbnail_png from '../project15/tappy_thumbnail.png';
-// import tappy_thumbnail_png from '../project16/tappy_thumbnail.png';
-// import tappy_thumbnail_png from '../project17/tappy_thumbnail.png';
-// import tappy_thumbnail_png from '../project18/tappy_thumbnail.png';
-// import tappy_thumbnail_png from '../project19/tappy_thumbnail.png';
-// import tappy_thumbnail_png from '../project20/tappy_thumbnail.png';
-// import tappy_thumbnail_png from '../project21/tappy_thumbnail.png';
-// import tappy_thumbnail_png from '../project22/tappy_thumbnail.png';
-// import tappy_thumbnail_png from '../project23/tappy_thumbnail.png';
-// import tappy_thumbnail_png from '../project24/tappy_thumbnail.png';
-// import tappy_thumbnail_png from '../project25/tappy_thumbnail.png';
-// import tappy_thumbnail_png from '../project26/tappy_thumbnail.png';
+import project08_thumbnail from '../project08/slic3r_thumbnail.png';
+import project09_thumbnail from '../project09/project_thumbnail.png';
+import project10_thumbnail from '../project10/project_thumbnail.png';
+import project11_thumbnail from '../project11/project_thumbnail.png';
+import project12_thumbnail from '../project12/project_thumbnail.png';
+import project13_thumbnail from '../project13/project_thumbnail.png';
+import project14_thumbnail from '../project14/project_thumbnail.png';
+import project15_thumbnail from '../project15/project_thumbnail.png';
+// import project16_thumbnail from '../project16/project_thumbnail.png';
+// import project17_thumbnail from '../project17/project_thumbnail.png';
+// import project18_thumbnail from '../project18/project_thumbnail.png';
+// import project19_thumbnail from '../project19/project_thumbnail.png';
+// import project20_thumbnail from '../project20/project_thumbnail.png';
+// import project21_thumbnail from '../project21/project_thumbnail.png';
+// import project22_thumbnail from '../project22/project_thumbnail.png';
+// import project23_thumbnail from '../project23/project_thumbnail.png';
+// import project24_thumbnail from '../project24/project_thumbnail.png';
+// import project25_thumbnail from '../project25/project_thumbnail.png';
+// import project26_thumbnail from '../project26/project_thumbnail.png';
 
 export default function HelloworldPage() {
   return (
@@ -58,7 +58,7 @@ export default function HelloworldPage() {
             <ProjectBox
               href={'project01'}
               image_src={tradingview_screenshot_png.src}
-              text={'project1'}
+              text={'project01'}
             />
           </Grid>
           <Grid
@@ -68,7 +68,7 @@ export default function HelloworldPage() {
             <ProjectBox
               href={'project02'}
               image_src={appiumbehavenotes_thumbnail_png.src}
-              text={'project2'}
+              text={'project02'}
             />
           </Grid>
           <Grid
@@ -78,7 +78,7 @@ export default function HelloworldPage() {
             <ProjectBox
               href={'project03'}
               image_src={allwinner_v3s_tryout_jpg.src}
-              text={'project3'}
+              text={'project03'}
             />
           </Grid>
           <Grid
@@ -88,7 +88,7 @@ export default function HelloworldPage() {
             <ProjectBox
               href={'project04'}
               image_src={youtubesplitviewtryout_thumbnail_png.src}
-              text={'project4'}
+              text={'project04'}
             />
           </Grid>
           <Grid
@@ -98,7 +98,7 @@ export default function HelloworldPage() {
             <ProjectBox
               href={'project05'}
               image_src={vorontryout_thumbnail_png.src}
-              text={'project5'}
+              text={'project05'}
             />
           </Grid>
           <Grid
@@ -108,7 +108,7 @@ export default function HelloworldPage() {
             <ProjectBox
               href={'project06'}
               image_src={t79d8c82649563e29b20c231b6bfd1efd_svg.src}
-              text={'project4'}
+              text={'project06'}
             />
           </Grid>
           <Grid
@@ -118,7 +118,7 @@ export default function HelloworldPage() {
             <ProjectBox
               href={'project07'}
               image_src={tappy_thumbnail_png.src}
-              text={'project4'}
+              text={'project07'}
             />
           </Grid>
 
@@ -128,8 +128,8 @@ export default function HelloworldPage() {
           >
             <ProjectBox
               href={'project08'}
-              image_src={youtubesplitviewtryout_thumbnail_png.src}
-              text={'project4'}
+              image_src={project08_thumbnail.src}
+              text={'project08'}
             />
           </Grid>
 
@@ -139,8 +139,8 @@ export default function HelloworldPage() {
           >
             <ProjectBox
               href={'project09'}
-              image_src={youtubesplitviewtryout_thumbnail_png.src}
-              text={'project4'}
+              image_src={project09_thumbnail.src}
+              text={'project09'}
             />
           </Grid>
 
@@ -150,8 +150,8 @@ export default function HelloworldPage() {
           >
             <ProjectBox
               href={'project10'}
-              image_src={youtubesplitviewtryout_thumbnail_png.src}
-              text={'project4'}
+              image_src={project10_thumbnail.src}
+              text={'project10'}
             />
           </Grid>
 
@@ -161,8 +161,8 @@ export default function HelloworldPage() {
           >
             <ProjectBox
               href={'project11'}
-              image_src={youtubesplitviewtryout_thumbnail_png.src}
-              text={'project4'}
+              image_src={project11_thumbnail.src}
+              text={'project11'}
             />
           </Grid>
 
@@ -172,8 +172,8 @@ export default function HelloworldPage() {
           >
             <ProjectBox
               href={'project12'}
-              image_src={youtubesplitviewtryout_thumbnail_png.src}
-              text={'project4'}
+              image_src={project12_thumbnail.src}
+              text={'project12'}
             />
           </Grid>
 
@@ -183,8 +183,8 @@ export default function HelloworldPage() {
           >
             <ProjectBox
               href={'project13'}
-              image_src={youtubesplitviewtryout_thumbnail_png.src}
-              text={'project4'}
+              image_src={project13_thumbnail.src}
+              text={'project13'}
             />
           </Grid>
 
@@ -194,8 +194,8 @@ export default function HelloworldPage() {
           >
             <ProjectBox
               href={'project14'}
-              image_src={youtubesplitviewtryout_thumbnail_png.src}
-              text={'project4'}
+              image_src={project14_thumbnail.src}
+              text={'project14'}
             />
           </Grid>
 
@@ -205,8 +205,8 @@ export default function HelloworldPage() {
           >
             <ProjectBox
               href={'project15'}
-              image_src={youtubesplitviewtryout_thumbnail_png.src}
-              text={'project4'}
+              image_src={project15_thumbnail.src}
+              text={'project15'}
             />
           </Grid>
 
@@ -217,7 +217,7 @@ export default function HelloworldPage() {
             <ProjectBox
               href={'project16'}
               image_src={youtubesplitviewtryout_thumbnail_png.src}
-              text={'project4'}
+              text={'project16'}
             />
           </Grid>
 
@@ -228,7 +228,7 @@ export default function HelloworldPage() {
             <ProjectBox
               href={'project17'}
               image_src={youtubesplitviewtryout_thumbnail_png.src}
-              text={'project4'}
+              text={'project17'}
             />
           </Grid>
 
@@ -239,7 +239,7 @@ export default function HelloworldPage() {
             <ProjectBox
               href={'project18'}
               image_src={youtubesplitviewtryout_thumbnail_png.src}
-              text={'project4'}
+              text={'project18'}
             />
           </Grid>
 
@@ -250,7 +250,7 @@ export default function HelloworldPage() {
             <ProjectBox
               href={'project19'}
               image_src={youtubesplitviewtryout_thumbnail_png.src}
-              text={'project4'}
+              text={'project19'}
             />
           </Grid>
 
@@ -261,7 +261,7 @@ export default function HelloworldPage() {
             <ProjectBox
               href={'project20'}
               image_src={youtubesplitviewtryout_thumbnail_png.src}
-              text={'project4'}
+              text={'project20'}
             />
           </Grid>
 
@@ -272,7 +272,7 @@ export default function HelloworldPage() {
             <ProjectBox
               href={'project21'}
               image_src={youtubesplitviewtryout_thumbnail_png.src}
-              text={'project4'}
+              text={'project21'}
             />
           </Grid>
 
@@ -283,7 +283,7 @@ export default function HelloworldPage() {
             <ProjectBox
               href={'project22'}
               image_src={youtubesplitviewtryout_thumbnail_png.src}
-              text={'project4'}
+              text={'project22'}
             />
           </Grid>
 
@@ -294,7 +294,7 @@ export default function HelloworldPage() {
             <ProjectBox
               href={'project23'}
               image_src={youtubesplitviewtryout_thumbnail_png.src}
-              text={'project4'}
+              text={'project23'}
             />
           </Grid>
 
@@ -305,7 +305,7 @@ export default function HelloworldPage() {
             <ProjectBox
               href={'project24'}
               image_src={youtubesplitviewtryout_thumbnail_png.src}
-              text={'project4'}
+              text={'project24'}
             />
           </Grid>
 
@@ -316,7 +316,7 @@ export default function HelloworldPage() {
             <ProjectBox
               href={'project25'}
               image_src={youtubesplitviewtryout_thumbnail_png.src}
-              text={'project4'}
+              text={'project25'}
             />
           </Grid>
 
@@ -327,7 +327,7 @@ export default function HelloworldPage() {
             <ProjectBox
               href={'project26'}
               image_src={youtubesplitviewtryout_thumbnail_png.src}
-              text={'project4'}
+              text={'project26'}
             />
           </Grid>
         </Grid>
