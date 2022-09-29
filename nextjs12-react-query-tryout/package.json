@@ -4,8 +4,11 @@
     "build": "next build",
     "start": "next start",
     "prettier_file": "prettier --write \"./pages/**/*.{js,jsx}\"",
-    "gitUpdate": "yarn prettier_file && git add . && git commit -m\"update nextjs12-helloworld, \"",
-    "init_dev": "yarn --dev && yarn dev"
+    "gitUpdate": "git add . && git commit -m\"update nextjs12-react-query-tryout,\"",
+    "init_dev": "yarn --dev && yarn dev",
+    "clear": "rm -rf node_modules && rm -rf .next",
+    "docker_rebuild": "docker compose up -d --build && docker compose logs -f",
+    "into_docker": "docker compose exec -it next /bin/bash"
   },
   "dependencies": {
     "axios": "^0.26.1",
