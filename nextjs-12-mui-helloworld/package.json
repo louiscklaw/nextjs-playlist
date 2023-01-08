@@ -1,12 +1,15 @@
 {
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "next dev -H 0.0.0.0",
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
     "gitUpdate": "git add . && git commit -m'update nextjs-12-mui-helloworld,' && git pull && git push",
-    "reYarn": "rm -rf node_modules && yarn --dev && yarn gulp"
+    "reYarn": "rm -rf node_modules && yarn --dev && yarn gulp",
+    "docker_rebuild": "docker compose up -d --build",
+    "docker_rebuild_logs": "docker compose up -d --build && docker compose logs -f",
+    "into_docker": "docker compose exec -it next /bin/bash"
   },
   "dependencies": {
     "@emotion/cache": "^11.7.1",
