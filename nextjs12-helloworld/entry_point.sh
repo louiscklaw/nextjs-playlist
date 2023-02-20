@@ -1,5 +1,10 @@
 #!/usr/bin/env bash
 
-npm i -d
+rm -rf .next
 
-npm run dev
+set -ex
+
+npm i
+
+npm run build
+npm run start
