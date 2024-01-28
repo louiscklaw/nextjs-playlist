@@ -5,7 +5,7 @@
 #       name: traefik-proxy-network
 
 services:
-  next:
+  nextjs12-helloworld:
     build: .
     image: 192.168.10.61:5000/nextjs12-helloworld
     ports:
@@ -17,3 +17,14 @@ services:
       - 'traefik.http.routers.nextjs12_helloworld-iamon99-http.rule=Host(`nextjs12_helloworld.iamon99.com`)'
       - 'traefik.http.routers.nextjs12_helloworld-iamon99-http.entrypoints=web'
       - 'traefik.http.services.nextjs12_helloworld-iamon99-http.loadbalancer.server.port=3000'
+
+    deploy:
+      resources:
+        reservations:
+          cpus: '0.01'
+
+    healthcheck:
+      test: ['CMD-SHELL', 'curl --fail http://localhost:3000/ || exit 1']
+      interval: 60s
+      timeout: 30s
+      retries: 15
