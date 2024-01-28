@@ -1,8 +1,8 @@
 # CREDIT: https://github.com/shren207/nextjs-docker-compose
 networks:
   default:
-    external:
-      name: traefik-proxy-network
+    name: traefik-proxy-network
+    external: true
 
 services:
   nextjs12-helloworld:
