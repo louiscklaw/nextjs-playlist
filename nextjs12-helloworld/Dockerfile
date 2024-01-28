@@ -12,6 +12,8 @@ WORKDIR /app
 user 1000:1000
 
 RUN npm i
+RUN npx browserslist@latest --update-db
 RUN npm run build
+
 
 ENTRYPOINT npm run start
