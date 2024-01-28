@@ -3,3 +3,5 @@
 set -ex
 
 docker compose build
+
+docker compose push
