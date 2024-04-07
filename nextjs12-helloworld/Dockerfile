@@ -5,9 +5,15 @@ FROM node:18-buster
 RUN mkdir -p /home/node
 RUN chown 1000:1000 -R /home/node
 
-RUN mkdir -p /app/node_modules
-RUN chown 1000:1000 -R /app/node_modules
-RUN chmod 777 -R /app/node_modules
+ADD . /app
+RUN chown 1000:1000 -R /app
 
 WORKDIR /app
 user 1000:1000
+
+RUN npm i
+RUN npx browserslist@latest --update-db
+RUN npm run build
+
+
+ENTRYPOINT npm run start
