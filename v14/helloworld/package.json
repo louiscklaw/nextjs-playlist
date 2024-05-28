@@ -1,0 +1,18 @@
+{
+  "name": "helloworld",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "clear": "npx rimraf ./node_modules ./.next",
+    "gitUpdate": "git add . && git commit -m\"update v14 helloworld,\""
+  },
+  "dependencies": {
+    "react": "^18",
+    "react-dom": "^18",
+    "next": "14.2.3"
+  }
+}
